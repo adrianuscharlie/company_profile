@@ -6,8 +6,10 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import MisiComponent from "../components/MisiComponents";
 import Hero1 from "../assets/Hero Section/1.png";
 import Hero2 from "../assets/Hero Section/2.png";
+import { DataMisi } from "../Data";
 export default function About() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -72,23 +74,33 @@ export default function About() {
       </section>
 
       <section className="misi-about mt-0 mt-md-5" id="misi">
-        <Container className="py-3">
+        <Container className="py-2">
           <Row className="text-center d-flex align-items-center justify-content-center mb-3">
             <Col md={6} className="">
               <div className="wrapper py-2">
                 <center>
-                  <h5 className="px-3 py-2 m-3" style={{ fontWeight: "500" }}>
-                    Nilai kami
+                  <h5 className="py-1 mx-3" style={{ fontWeight: "500" }}>
+                    Misi kami
                   </h5>
                 </center>
               </div>
-              <p className="lead">Mengapa harus memilih produk kami?</p>
+              <p className="lead">
+                Yang kami lakukan untuk membangun perusahaan
+              </p>
             </Col>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
-            
+            {DataMisi.map((misi) => (
+              <MisiComponent url={misi.url} desc={misi.desc} />
+            ))}
           </Row>
         </Container>
+      </section>
+
+      <section className="lokasi-aboutmt-0 mt-md-5" id="lokasi">
+      <Container className="py-2">
+      
+      </Container>
       </section>
     </>
   );

@@ -162,3 +162,17 @@ footer span{
   font-size: 25px;
   color: rgb(249, 177, 49);
 }
+
+.misi-about h5{
+  background-color: rgb(12,46,122);
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  border: rgb(12,46,122) solid;
+  font-size: 25px;
+  width: 30%;
+}
+
+.misi-about h5:hover{
+  background-color: white;
+  color: rgb(12,46,122)
+}

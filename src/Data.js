@@ -20,3 +20,13 @@ export const DataNilai=[
     {nama:"KESEJAHTERAAN PETERNAK",desc:"Selalu menghargai kontribusi peternak ayam dan selalu memperhatikan kesejahteraan mereka",url:require("./assets/Nilai/5.png")},
     {nama:"SOSIAL",desc:"Selalu memperhatikan dampak bisnisnya terhadap masyarakat dan berkontribusi positif bagi pemberdayaan masyarakat",url:require("./assets/Nilai/6.png")},
 ]
+
+export const DataMisi=[
+    {url:require("./assets/Misi/1.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/2.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/3.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/4.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/5.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/6.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+
+]
