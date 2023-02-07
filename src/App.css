@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-custom{
+  color: white;
+  background-color: rgb(249, 177, 49);
+}
+
+.navbar-custom a:hover{
+color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: rgb(249, 177, 49);
+}
+
+footer span{
+  margin-bottom: 10px;
+}
+
+
+.custom-footer-up{
+  padding: 2px;
+  border: 2px solid rgb(249, 177, 49);
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(249, 177, 49);
+  color: rgb(12,46,122);
+  font-weight: bold;
+}
+
+.custom-footer-down{
+  padding: 5px;
+  border: 2px solid rgb(249, 177, 49);
+  background-color: rgb(12,46,122);
+  color: white;
+}
+
+.copyright{
+  color: rgb(249, 177, 49);
+  font-size: 15px;
+}
+
+.visi-about{
+  background-color: rgb(249, 177, 49);
+  min-height: 35vh;
+  color: white;
+  
+}
+
+.visi-about h5,.video-about h1{
+  color: rgb(12,46,122);
+  text-transform: uppercase;
+  font-weight: 750;
+}
+
+.video-about{
+  min-height: 50vh;
+}
+
+.product{
+  background-color: rgb(228,229,230);
+}
+
+
+.product a{
+  text-decoration: none;
+  background-color: rgb(12,46,122);
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.info-perusahaan a{
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  border: solid rgb(12,46,122);
+  color: rgb(12,46,122);
+  font-size: 15px;
+}
+
+.info-perusahaan a:hover{
+  color: white;
+  background-color: rgb(12,46,122);
+}
+
+.product a:hover{
+  color: rgb(12,46,122);
+  background-color: rgb(228,229,230);
+  border: rgb(12,46,122) solid ;
+}
+
+.nilai h5{
+  color: rgb(12,46,122);
+  border-radius: 10px 10px 10px 10px;
+  border: rgb(12,46,122) solid;
+  font-size: 25px;
+  width: 35%;
+}
+
+.nilai h5:hover{
+  background-color: rgb(12,46,122);
+  color: white;
+}
+
+
+.produk-card{
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.produk-card:hover{
+  background-color: rgb(249, 177, 49);
+}
+
+.nilai-card h4{
+  color: rgb(12,46,122);
+}
+
+.custom-footer i{
+  font-size: 25px;
+  color: rgb(249, 177, 49);
+}
