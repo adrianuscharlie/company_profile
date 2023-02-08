@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import { useState } from "react";
-import PopUp from "./PopUp";
 import Modal from "react-bootstrap/esm/Modal";
 import Hero2 from "../assets/Hero Section/2.png";
 import Hero1 from "../assets/Hero Section/1.png";
@@ -23,18 +22,18 @@ export default function Location(props) {
   const handleShow = () => setIsOpen(true);
 
   return (
-    <Col md={5} sm={12} xs={12} className="custom-card  mb-5 mx-3 w-30 py-2">
+    <Col md={5} sm={12} xs={12} className="custom-card  mb-5 mx-4 w-30 py-2">
       <Row className="d-flex justify-content-start align-items-center">
-        <Col xs={6} className="w-25">
-          <img src={props.url} className="img-responsive" width={100} />
+        <Col md={4} xs={6} className="d-flex justify-content-center">
+          <img src={props.url} className="img-responsive" width={125} />
         </Col>
-        <Col xs={6} className="w-50 ms-5">
+        <Col md={8} xs={6} className="">
           <div className="card-body text-start">
             <div className="card-title">
-              <h4 className="h4">{props.nama}</h4>
+              <h4 className="h4" style={{fontSize:"30px"}}>{props.nama}</h4>
             </div>
             <div className="card-text">
-              <p className="lead">{props.desc}</p>
+              <p className="p" style={{fontSize:"14px"}}>{props.desc}</p>
               <button
                 href=""
                 onClick={togglePopUp}

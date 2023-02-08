@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Logo from "../assets/Logo/footer.png";
 import { NavLink } from "react-router-dom";
-import { HashLink, HashLink as Link } from "react-router-hash-link";
+import { HashLink} from "react-router-hash-link";
 export default function Footer() {
   return (
     <footer
@@ -25,19 +25,19 @@ export default function Footer() {
             <h4 className="h4">Tentang</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to="/about">Profile Perseroan</NavLink>
+                <HashLink smooth to="/about#video">Profil Perseroan</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/about#visi">Visi dan Misi</HashLink>
+                <HashLink smooth to="/about#visi">Visi dan Misi</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/about#visi">Linamasa Sejarah</HashLink>
+                <HashLink smooth to="/about#visi">Linimasa Sejarah</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/about#visi">Lokasi Usaha</HashLink>
+                <HashLink smooth to="/about#lokasi">Lokasi Usaha</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/about#visi">Dewan Direksi</HashLink>
+                <HashLink smooth to="/about#visi">Dewan Direksi</HashLink>
               </li>
             </ul>
           </Col>
@@ -45,19 +45,19 @@ export default function Footer() {
             <h4 className="h4">Lini Bisnis</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <HashLink to="/business">Peternakan Pembibitan</HashLink>
+                <HashLink smooth to="/business#pembibitan">Peternakan Pembibitan</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/business">Peternakan Broiler</HashLink>
+                <HashLink smooth to="/business#broiler">Peternakan Broiler</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/business">Peternakan Petelur</HashLink>
+                <HashLink smooth to="/business#petelur">Peternakan Petelur</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/business">Penetasan Telur</HashLink>
+                <HashLink smooth to="/business#penetasan">Penetasan Telur</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/business">Rumah Potong</HashLink>
+                <HashLink smooth to="/business#rpa">Rumah Potong Ayam</HashLink>
               </li>
             </ul>
           </Col>
@@ -65,19 +65,19 @@ export default function Footer() {
             <h4 className="h4">Produk</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <HashLink to="/product">DOC Parent Stock</HashLink>
+                <HashLink smooth to="/product#docps">DOC Parent Stock</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/product">DOC Final Stock</HashLink>
+                <HashLink smooth to="/product#docfs">DOC Final Stock</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/product">Ayam Hidup</HashLink>
+                <HashLink smooth to="/product#broiler">Ayam Hidup</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/product">Telur Komersil</HashLink>
+                <HashLink smooth to="/product#telur">Telur Komersil</HashLink>
               </li>
               <li className="nav-item mb-2">
-                <HashLink to="/product">Karkas Ayam</HashLink>
+                <HashLink smooth to="/product#karkas">Karkas Ayam</HashLink>
               </li>
             </ul>
           </Col>
@@ -114,14 +114,6 @@ export default function Footer() {
                 </Col>
                 <Col md={10} xs={8}>
                   info@januputrasejahtera.com
-                </Col>
-              </Row>
-              <Row className="d-flex justify-content-start align-items-center p-2">
-                <Col md={2} xs={1}>
-                  <i className="fa fa-whatsapp"></i>
-                </Col>
-                <Col md={10} xs={10}>
-                  +62 812 3456 7890
                 </Col>
               </Row>
               <Row className="d-flex justify-content-start align-items-center p-2">

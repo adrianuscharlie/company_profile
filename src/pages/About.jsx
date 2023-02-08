@@ -19,7 +19,7 @@ export default function About() {
   };
   return (
     <>
-      <section className="hero-about mt-5 mt-md-0" id="hero">
+      <section className="hero-about mt-5 mt-md-0" id="about">
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <CarouselItem className="hero-item">
             <img className="d-block w-100" src={Hero1} />
@@ -63,9 +63,9 @@ export default function About() {
           </Row>
         </Container>
       </section>
-      <section className="visi-about mt-0 mt-md-5" id="visi">
-        <Container className="pt-5">
-          <Row className="d-flex align-items-center justify-content-start">
+      <section className="visi-about my-0 mt-md-5 pt-3" id="visi">
+        <Container className="pt-5 ps-4 mx-md-5 py-5">
+          <Row className="d-flex align-items-center justify-content-center">
             <h5 className="h5">VISI PERSEROAN</h5>
             <h2 className="h2">
               Menjadi perusahaan ayam integrator terkemuka di Indonesia yang
@@ -81,12 +81,12 @@ export default function About() {
             <Col md={6} className="">
               <div className="wrapper py-2">
                 <center>
-                  <h5 className="py-1 mx-3" style={{ fontWeight: "500" }}>
-                    Misi kami
+                  <h5 className="px-3 py-2 my-2" style={{ fontWeight: "500" ,fontSize:"25"}}>
+                    MISI KAMI
                   </h5>
                 </center>
               </div>
-              <p className="lead">
+              <p className="lead" style={{fontSize:"25px"}}>
                 Yang kami lakukan untuk membangun perusahaan
               </p>
             </Col>
@@ -103,19 +103,16 @@ export default function About() {
       <Container className="py-2">
       <Row className="text-center d-flex align-items-center justify-content-center mb-3">
             <Col md={6} className="">
-              <div className="wrapper py-2">
+              <div className="wrapper py-2 mb-4">
                 <center>
-                  <h5 className="py-1 mx-3" style={{ fontWeight: "500" }}>
-                    Lokasi usaha
+                  <h5 className="px-3 py-2 my-2" style={{ fontWeight: "500" ,fontSize:"25"}}>
+                    LOKASI USAHA
                   </h5>
                 </center>
               </div>
-              <p className="lead">
-                Yang kami lakukan untuk membangun perusahaan
-              </p>
             </Col>
           </Row>
-          <Row className="text-center d-flex  align-items-start justify-content-center mb-5 mx-3">
+          <Row className="text-center d-flex  align-items-start justify-content-center mx-3">
             {DataLokasi.map((lokasi) => (
               <Location url={lokasi.url} desc={lokasi.desc} nama={lokasi.nama} />
             ))}
