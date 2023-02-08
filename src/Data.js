@@ -22,11 +22,22 @@ export const DataNilai=[
 ]
 
 export const DataMisi=[
-    {url:require("./assets/Misi/1.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
-    {url:require("./assets/Misi/2.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
-    {url:require("./assets/Misi/3.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
-    {url:require("./assets/Misi/4.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
-    {url:require("./assets/Misi/5.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
-    {url:require("./assets/Misi/6.png"),desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas justo at dolor feugiat semper. Duis vitae tortor diam. Vivamus fringilla convallis magna, eget ullamcorper."},
+    {url:require("./assets/Misi/1.png"),desc:"Memberikan produk berkualitas tinggi kepada konsumen"},
+    {url:require("./assets/Misi/2.png"),desc:"Menjaga kesejahteraan peternak ayam dan meningkatkan produktivitas peternakan"},
+    {url:require("./assets/Misi/3.png"),desc:"Meningkatkan efisiensi dalam proses kerja dan sistem produksi    "},
+    {url:require("./assets/Misi/4.png"),desc:"Mengadopsi praktik-praktik bisnis yang ramah lingkungan"},
+    {url:require("./assets/Misi/5.png"),desc:"Mengembangkan program-program sosial yang bermanfaat bagi masyarakat"},
+    {url:require("./assets/Misi/6.png"),desc:"Meningkatkan keuntungan perusahaan secara konsisten"},
 
+]
+
+export const DataLokasi=[
+    {url:require("./assets/Lokasi/1.png"),nama:"Peternakan Pembibitan",desc:"Grantung, Karangmoncol, Purbalingga, Jawa Tengah"},
+    {url:require("./assets/Lokasi/1.png"),nama:"Peternakan Pembibitan",desc:"Ngawis, Karangmojo, Gunungkidul, DI Yogyakarta"},
+    {url:require("./assets/Lokasi/2.png"),nama:"Peternakan Broiler",desc:"Klerong, Jatipuro, Karanganyar, Jawa Tengah"},
+    {url:require("./assets/Lokasi/2.png"),nama:"Peternakan Broiler",desc:"Margokaton, Seyegan, Sleman, DI Yogyakarta"},
+    {url:require("./assets/Lokasi/2.png"),nama:"Peternakan Broiler",desc:"Sistem Sewa dan Kemitraan di Jawa dan Bali"},
+    {url:require("./assets/Lokasi/3.png"),nama:"Peternakan Petelur",desc:"Kulon Progo dan Sleman, DI Yogyakarta"},
+    {url:require("./assets/Lokasi/4.png"),nama:"Penetasan Telur",desc:"Karangmojo, Gunungkidul, DI Yogyakarta"},
+    {url:require("./assets/Lokasi/5.png"),nama:"Rumah Potong Ayam",desc:"Cebongan, Sleman, DI Yogyakarta"},
 ]

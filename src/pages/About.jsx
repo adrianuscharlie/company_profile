@@ -10,6 +10,8 @@ import MisiComponent from "../components/MisiComponents";
 import Hero1 from "../assets/Hero Section/1.png";
 import Hero2 from "../assets/Hero Section/2.png";
 import { DataMisi } from "../Data";
+import Location from "../components/Location";
+import { DataLokasi } from "../Data";
 export default function About() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -97,9 +99,27 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="lokasi-aboutmt-0 mt-md-5" id="lokasi">
+      <section className="lokasi-about mt-0 mt-md-5" id="lokasi">
       <Container className="py-2">
-      
+      <Row className="text-center d-flex align-items-center justify-content-center mb-3">
+            <Col md={6} className="">
+              <div className="wrapper py-2">
+                <center>
+                  <h5 className="py-1 mx-3" style={{ fontWeight: "500" }}>
+                    Lokasi usaha
+                  </h5>
+                </center>
+              </div>
+              <p className="lead">
+                Yang kami lakukan untuk membangun perusahaan
+              </p>
+            </Col>
+          </Row>
+          <Row className="text-center d-flex  align-items-start justify-content-center mb-5 mx-3">
+            {DataLokasi.map((lokasi) => (
+              <Location url={lokasi.url} desc={lokasi.desc} nama={lokasi.nama} />
+            ))}
+          </Row>
       </Container>
       </section>
     </>

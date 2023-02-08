@@ -37,142 +37,180 @@
   }
 }
 
-.navbar-custom{
+.navbar-custom {
   color: white;
   background-color: rgb(249, 177, 49);
 }
 
-.navbar-custom a:hover{
-color: white;
+.navbar-custom a:hover {
+  color: white;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: white;
 }
 
-footer a:hover{
+footer a:hover {
   color: rgb(249, 177, 49);
 }
 
-footer span{
+footer span {
   margin-bottom: 10px;
 }
 
-
-.custom-footer-up{
+.custom-footer-up {
   padding: 2px;
   border: 2px solid rgb(249, 177, 49);
   border-radius: 15px 15px 0 0;
   background-color: rgb(249, 177, 49);
-  color: rgb(12,46,122);
+  color: rgb(12, 46, 122);
   font-weight: bold;
 }
 
-.custom-footer-down{
+.custom-footer-down {
   padding: 5px;
   border: 2px solid rgb(249, 177, 49);
-  background-color: rgb(12,46,122);
+  background-color: rgb(12, 46, 122);
   color: white;
 }
 
-.copyright{
+.copyright {
   color: rgb(249, 177, 49);
   font-size: 15px;
 }
 
-.visi-about{
+.visi-about {
   background-color: rgb(249, 177, 49);
   min-height: 35vh;
   color: white;
-  
 }
 
-.visi-about h5,.video-about h1{
-  color: rgb(12,46,122);
+.visi-about h5,
+.video-about h1 {
+  color: rgb(12, 46, 122);
   text-transform: uppercase;
   font-weight: 750;
 }
 
-.video-about{
+.video-about {
   min-height: 50vh;
 }
 
-.product{
-  background-color: rgb(228,229,230);
+.product {
+  background-color: rgb(228, 229, 230);
 }
 
-
-.product a{
+.product a {
   text-decoration: none;
-  background-color: rgb(12,46,122);
+
+  background-color: rgb(228, 229, 230);
   border-radius: 10px 10px 10px 10px;
   color: white;
   font-size: 25px;
 }
 
-.info-perusahaan a{
+.info-perusahaan a {
   text-decoration: none;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  border: solid rgb(12,46,122);
-  color: rgb(12,46,122);
+  border: solid rgb(12, 46, 122);
+  color: rgb(12, 46, 122);
   font-size: 15px;
 }
 
-.info-perusahaan a:hover{
+.info-perusahaan a:hover {
   color: white;
-  background-color: rgb(12,46,122);
+  background-color: rgb(12, 46, 122);
 }
 
-.product a:hover{
-  color: rgb(12,46,122);
-  background-color: rgb(228,229,230);
-  border: rgb(12,46,122) solid ;
+.product a:hover {
+  color: white;
+  background-color: rgb(12, 46, 122);
+  border: rgb(12, 46, 122) solid;
 }
 
-.nilai h5{
-  color: rgb(12,46,122);
+.nilai h5 {
+  color: rgb(12, 46, 122);
   border-radius: 10px 10px 10px 10px;
-  border: rgb(12,46,122) solid;
+  border: rgb(12, 46, 122) solid;
   font-size: 25px;
   width: 35%;
 }
 
-.nilai h5:hover{
-  background-color: rgb(12,46,122);
+.nilai h5:hover {
+  background-color: rgb(12, 46, 122);
   color: white;
 }
 
-
-.produk-card{
+.produk-card {
   background-color: white;
   border-radius: 10px 10px 10px 10px;
 }
 
-.produk-card:hover{
+.produk-card:hover {
   background-color: rgb(249, 177, 49);
 }
 
-.nilai-card h4{
-  color: rgb(12,46,122);
+.nilai-card h4 {
+  color: rgb(12, 46, 122);
 }
 
-.custom-footer i{
+.custom-footer i {
   font-size: 25px;
   color: rgb(249, 177, 49);
 }
 
-.misi-about h5{
-  background-color: rgb(12,46,122);
+.misi-about h5,
+.lokasi-about h5 {
+  background-color: white;
   color: white;
   border-radius: 10px 10px 10px 10px;
-  border: rgb(12,46,122) solid;
+  color: rgb(12, 46, 122);
+  border: rgb(12, 46, 122) solid;
   font-size: 25px;
-  width: 30%;
+  width: 35%;
 }
 
-.misi-about h5:hover{
+.misi-about h5:hover {
+  background-color: rgb(12, 46, 122);
+  color: white;
+}
+.lokasi-about h5:hover {
+  background-color: rgb(12, 46, 122);
+  color: white;
+}
+
+.custom-card {
+  border-radius: 10px 10px 10px 10px;
+  border: rgb(249, 177, 49) solid;
+}
+.card-title {
+  color: rgb(12, 46, 122);
+  font-weight: bold;
+}
+
+.button-selengkapnya {
+  border: rgb(12, 46, 122) solid;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(12, 46, 122);
+  font-weight: 500;
+  font-size: 15px;
   background-color: white;
-  color: rgb(12,46,122)
+  margin-bottom: 10px;
+}
+
+.button-selengkapnya:hover {
+  background-color: rgb(12, 46, 122);
+  color: white;
+}
+.modal-header {
+  background-color: rgb(249, 177, 49);
+  border-radius: 30px 30px 0px 0px;
+}
+.modal-content{
+  border-radius: 30px 30pz;
 }
