@@ -9,6 +9,7 @@ import Product from "./pages/Product";
 import Relation from "./pages/Relation";
 import { DataLinkBusiness } from "./Data";
 import BusinessLayout from "./pages/BusinessLayout";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
           ))}
           <Route path="product" element={<Product />} />
           <Route path="relation" element={<Relation />} />
+          <Route path="contact" element={<Contact />}/>
         </Route>
       </Routes>
     </BrowserRouter>

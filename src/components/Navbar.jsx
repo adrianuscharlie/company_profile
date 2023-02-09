@@ -60,7 +60,12 @@ export default function Header() {
               <NavLink className="nav-link" to="relation">
                 Relasi Investor
               </NavLink>
+              <HashLink className="nav-link ms-1  p-2 me-3" to="contact">
+                Kontak
+              </HashLink>
             </Nav>
+            <div className="dropdown-divider"></div>
+            
           </Navbar.Collapse>
         </Container>
       </Navbar>

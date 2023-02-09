@@ -22,10 +22,10 @@ export default function Home() {
   return (
     <>
       <section className="mt-5 mt-md-0" id="home">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel activeIndex={index} onSelect={handleSelect} className="carousel">
           {DataCarousel.map((img) => (
-            <CarouselItem >
-              <img className="d-block position-relative w-100" src={img} />
+            <CarouselItem>
+              <img className="d-block w-100" src={img} />
             </CarouselItem>
           ))}
         </Carousel>
@@ -51,7 +51,7 @@ export default function Home() {
                 </p>
                 <div className="wrapper py-4">
                   <HashLink
-                  smooth
+                    smooth
                     className=" w-50 px-3 py-2 my-3"
                     to="/about#hero"
                     style={{ fontWeight: "500" }}
@@ -67,24 +67,27 @@ export default function Home() {
       <section className="product mt-5 mt-md-0">
         <Container className="py-5 ">
           <Row className="text-center d-flex align-items-center justify-content-center mb-5">
-            <Col md={7} className="">
-              <div className="wrapper py-4">
-                <HashLink smooth
-                  className="w-50 px-3 py-2 m-3 btn-product"
-                  to="/product#product"
-                  style={{ fontWeight: "500" }}
-                >
+            <Col md={7} className="mb-3">
+              <HashLink
+                smooth
+                className="w-50 px-3 py-2 m-3 btn-product"
+                to="/product#product"
+                style={{ fontWeight: "500" }}
+              >
                 PRODUK KAMI
-                </HashLink>
-              </div>
-              <p className="lead px-5" style={{fontSize:"25px"}}>
-                Kami menyediakan produk yang berkualitas dan terjangkau
-              </p>
+              </HashLink>
             </Col>
+            <p className="lead px-5" style={{ fontSize: "25px" }}>
+              Kami menyediakan produk yang berkualitas dan terjangkau
+            </p>
           </Row>
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
             {DataProduk.map((produk) => (
-                <ProductComponent nama={produk.nama} url={produk.url} id={produk.id} />
+              <ProductComponent
+                nama={produk.nama}
+                url={produk.url}
+                id={produk.id}
+              />
             ))}
           </Row>
         </Container>
@@ -92,16 +95,17 @@ export default function Home() {
       <section className="nilai mt-5 mt-md-0">
         <Container className="py-5 ">
           <Row className="text-center d-flex align-items-center justify-content-center mb-3">
-            <Col md={6} className="">
-              <div className="wrapper py-1">
-                <center>
-                  <h5 className="px-3 py-2 my-2" style={{ fontWeight: "500" ,fontSize:"25"}}>
-                    NILAI KAMI
-                  </h5>
-                </center>
-              </div>
-              <p className="lead" style={{fontSize:"25px"}}>Mengapa harus memilih produk kami?</p>
+            <Col
+              md={4}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+            >
+              <h5 className="w-50 h5 py-2">NILAI KAMI</h5>
             </Col>
+            <p className="lead" style={{ fontSize: "25px" }}>
+              Mengapa harus memilih produk kami?
+            </p>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
             {DataNilai.map((produk) => (

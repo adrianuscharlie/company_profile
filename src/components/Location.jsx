@@ -22,12 +22,12 @@ export default function Location(props) {
   const handleShow = () => setIsOpen(true);
 
   return (
-    <Col md={5} sm={12} xs={12} className="custom-card  mb-5 mx-4 w-30 py-2">
+    <Col lg={5} md={12} sm={12} xs={12} className="custom-card  mb-5 mx-4 w-30 py-2">
       <Row className="d-flex justify-content-start align-items-center">
-        <Col md={4} xs={6} className="d-flex justify-content-center">
+        <Col md={4} xs={5} className="d-flex justify-content-center">
           <img src={props.url} className="img-responsive" width={125} />
         </Col>
-        <Col md={8} xs={6} className="">
+        <Col md={8} xs={7} className="">
           <div className="card-body text-start">
             <div className="card-title">
               <h4 className="h4" style={{fontSize:"30px"}}>{props.nama}</h4>

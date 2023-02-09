@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import Image from "react-bootstrap/esm/Image";
 export default function ProductComponent(props) {
   return (
-    <Col lg={2} md={2} sm={3} xs={6} className="m-2">
+    <Col lg={2} md={3} sm={6} xs={6} className="m-2">
       <div className="produk-card p-4">
       <HashLink to={props.id}>
         <Image

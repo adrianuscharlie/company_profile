@@ -12,6 +12,8 @@ import Hero2 from "../assets/Hero Section/2.png";
 import { DataMisi } from "../Data";
 import Location from "../components/Location";
 import { DataLokasi } from "../Data";
+import Card from "react-bootstrap/esm/Card";
+import { DewanDireksi } from "../Data";
 export default function About() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -37,7 +39,7 @@ export default function About() {
                 <iframe
                   style={{ aspectRatio: "16/9", width: "100%" }}
                   className="video"
-                  src="https://www.youtube.com/embed/dFlDRhvM4L0"
+                  src="https://www.youtube.com/embed/AjWfY7SnMBI"
                   frameBorder={0}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope;"
                   allowFullScreen
@@ -49,7 +51,7 @@ export default function About() {
               sm={12}
               className="mb-lg-0 p-5 d-flex align-items-start"
             >
-              <div className="lc-block ms-5">
+              <div className="lc-block lg-ms-5">
                 <div editable="rich">
                   <h1 className="fw-bolder display-2">
                     Video <br />
@@ -76,20 +78,19 @@ export default function About() {
       </section>
 
       <section className="misi-about mt-0 mt-md-5" id="misi">
-        <Container className="py-2">
+        <Container className="py-5">
           <Row className="text-center d-flex align-items-center justify-content-center mb-3">
-            <Col md={6} className="">
-              <div className="wrapper py-2">
-                <center>
-                  <h5 className="px-3 py-2 my-2" style={{ fontWeight: "500" ,fontSize:"25"}}>
-                    MISI KAMI
-                  </h5>
-                </center>
-              </div>
-              <p className="lead" style={{fontSize:"25px"}}>
-                Yang kami lakukan untuk membangun perusahaan
-              </p>
+            <Col
+              md={4}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+            >
+              <h5 className=" h5 py-2">MISI KAMI</h5>
             </Col>
+            <p className="lead" style={{ fontSize: "25px" }}>
+              Yang kami lakukan untuk membangun perusahaan
+            </p>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
             {DataMisi.map((misi) => (
@@ -98,26 +99,85 @@ export default function About() {
           </Row>
         </Container>
       </section>
+      <section
+        className="linimasa-about mt-0 mt-md-5"
+        id="sejarah"
+        style={{ backgroundColor: "" }}
+      >
+        <Container className="py-5">
+          <Row className="text-center d-flex align-items-center justify-content-center mb-3">
+            <Col
+              md={4}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+            >
+              <h5 className="h5 py-2">LINIMASA SEJARAH</h5>
+            </Col>
+            <p className="lead" style={{ fontSize: "25px" }}>
+              Yang kami lakukan untuk membangun perusahaan
+            </p>
+          </Row>
+          <Row className="text-center d-flex  align-items-start justify-content-center mb-5"></Row>
+        </Container>
+      </section>
 
       <section className="lokasi-about mt-0 mt-md-5" id="lokasi">
-      <Container className="py-2">
-      <Row className="text-center d-flex align-items-center justify-content-center mb-3">
-            <Col md={6} className="">
-              <div className="wrapper py-2 mb-4">
-                <center>
-                  <h5 className="px-3 py-2 my-2" style={{ fontWeight: "500" ,fontSize:"25"}}>
-                    LOKASI USAHA
-                  </h5>
-                </center>
-              </div>
+        <Container className="py-5">
+          <Row className="text-center d-flex align-items-center justify-content-center mb-3">
+            <Col
+              md={4}
+              xs={12}
+              sm={12}
+              className="d-flex justify-content-center"
+            >
+              <h5 className="h5 py-2 ">LOKASI USAHA</h5>
             </Col>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mx-3">
             {DataLokasi.map((lokasi) => (
-              <Location url={lokasi.url} desc={lokasi.desc} nama={lokasi.nama} />
+              <Location
+                url={lokasi.url}
+                desc={lokasi.desc}
+                nama={lokasi.nama}
+              />
             ))}
           </Row>
-      </Container>
+        </Container>
+      </section>
+      <section
+        className="direksi-about mt-0 mt-md-5"
+        id="direksi"
+        style={{ backgroundColor: "" }}
+      >
+        <Container className="py-5">
+          <Row className="text-center d-flex align-items-center justify-content-center mb-3">
+            <Col
+              md={4}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+            >
+              <h5 className="h5 py-2">DEWAN DIREKSI</h5>
+            </Col>
+        
+          </Row>
+          <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
+            {DewanDireksi.map((direktur) => (
+              <Col lg={3} md={6} sm={12} xs={12} className="d-flex justify-content-center align-items-center mb-5">
+                <Card style={{ width: "18rem" }}>
+                  <Card.Img variant="top" src={direktur.url} />
+                  <Card.Body>
+                    <Card.Title>{direktur.nama}</Card.Title>
+                    <Card.Text>
+                      {direktur.desc}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </section>
     </>
   );

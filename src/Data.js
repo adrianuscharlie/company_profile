@@ -302,3 +302,18 @@ export const DataLinkBusiness = [
     par3: "Sistem kerja yang efisien dan berorientasi pada kualitas juga penting dalam fasilitas rumah potong ayam. Proses pemotongan harus dilakukan dengan cepat dan tepat untuk memastikan hasil yang bersih dan menghindari pembusukan. Fasilitas cold storage yang ada juga akan membantu menjaga kualitas produk dan memastikan kesegaran serta keamanan makanan. Sistem pengawasan dan pemantauan harus ada untuk memastikan bahwa standar kualitas dan higienis dipenuhi. Ini akan membantu meningkatkan kinerja bisnis dan memastikan konsistensi kualitas produk yang dihasilkan.",
   },
 ];
+
+
+export const DewanDireksi=[
+  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
+  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
+  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
+  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
+]
+
+export const Kontak=[
+  {nama:"Nomor Telephone",icon:"fa fa-phone",desc:"(0274) 871163"},
+  {nama:"Email",icon:" fa fa-envelope",desc:"info@januputrasejahtera.com"},
+  {nama:"Instagram",icon:"fa fa-instagram",desc:"januputrasejahtera"},
+  {nama:"Linkedin",icon:"fa fa-linkedin",desc:"PT Janu Putra Sejahtera"},
+]

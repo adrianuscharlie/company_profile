@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Logo from "../assets/Logo/footer.png";
-import { NavLink } from "react-router-dom";
 import { HashLink} from "react-router-hash-link";
 export default function Footer() {
   return (
@@ -13,7 +12,7 @@ export default function Footer() {
     >
       <Container className="px-3">
         <Row className="pt-3">
-          <Col md={1} sm={6} className="mb-3 col-6">
+          <Col lg={1} md={4} sm={6} className="mb-3 col-6">
             <img
               src={Logo}
               className="img-thumbnail"
@@ -21,7 +20,7 @@ export default function Footer() {
               width={200}
             />
           </Col>
-          <Col md={2} sm={6} className="mb-3 col-6">
+          <Col lg={2} md={4} sm={6} className="mb-3 col-6">
             <h4 className="h4">Tentang</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -41,7 +40,7 @@ export default function Footer() {
               </li>
             </ul>
           </Col>
-          <Col md={2} sm={6} className="mb-3 col-6">
+          <Col lg={2} md={4} sm={6} className="mb-3 col-6">
             <h4 className="h4">Lini Bisnis</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -61,7 +60,7 @@ export default function Footer() {
               </li>
             </ul>
           </Col>
-          <Col md={2} sm={6} className="mb-3 col-6">
+          <Col lg={2} md={3} sm={6} className="mb-3 col-6">
             <h4 className="h4">Produk</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -81,7 +80,7 @@ export default function Footer() {
               </li>
             </ul>
           </Col>
-          <Col md={2} sm={6} className="mb-3 col-6">
+          <Col lg={2} md={3} sm={6} className="mb-3 col-6">
             <h4 className="h4">Relasi Investor</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -95,9 +94,9 @@ export default function Footer() {
               </li>
             </ul>
           </Col>
-          <Col md={3} sm={6} className="mb-3">
+          <Col lg={3} md={6} sm={6} className="mb-3">
             <Container className="custom-footer-up text-center">
-              <h4 className="h4">Hubungi Kami</h4>
+            <HashLink smooth to="contact" id="hubungi-kami">Hubungi Kami</HashLink>
             </Container>
             <Container className="custom-footer-down align-items-center px-3">
               <Row className="d-flex justify-content-start align-items-center p-2">
