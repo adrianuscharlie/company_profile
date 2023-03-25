@@ -25,6 +25,8 @@ function App() {
           <Route path="relation" element={<Relation />} />
           <Route path="contact" element={<Contact />}/>
         </Route>
+        <Route path="/letter" element={<Home />}>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

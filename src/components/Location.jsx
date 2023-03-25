@@ -3,8 +3,6 @@ import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import { useState } from "react";
 import Modal from "react-bootstrap/esm/Modal";
-import Hero2 from "../assets/Hero Section/2.png";
-import Hero1 from "../assets/Hero Section/1.png";
 import Carousel from "react-bootstrap/esm/Carousel";
 import CarouselItem from "react-bootstrap/esm/CarouselItem";
 import Container from "react-bootstrap/esm/Container";
@@ -52,16 +50,16 @@ export default function Location(props) {
                 </Modal.Header>
                 <Modal.Body className="p-5">
                   <Carousel activeIndex={index} onSelect={handleSelect}>
+                  {props.carousel.map((img)=>(
                     <CarouselItem className="hero-item">
-                      <img className="img-thumbnail" src={Hero1}/>
+                      <img className="img-thumbnail" src={img}/>
                     </CarouselItem>
-                    <CarouselItem className="hero-item">
-                      <img className="img-thumbnail" src={Hero2} />
-                    </CarouselItem>
+                  ))}
+
                   </Carousel>
                 </Modal.Body>
                 <Modal.Footer>
-                  <p className="lead p-2">Terdiri dari 20 kandang dengan kapasitas sebanyak 200 ribu ekor ayam</p>
+                  <p className="lead p-2">{props.footer}</p>
                 </Modal.Footer>
               </Modal>
             </div>

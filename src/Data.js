@@ -1,7 +1,15 @@
 export const DataCarousel = [
-  require("./assets/Hero/1.png"),
-  require("./assets/Hero/2.png"),
-  require("./assets/Hero/3.png"),
+  { url: require("./assets/Hero/1.jpg"), top: "", bottom: "" },
+  {
+    url: require("./assets/Hero/2.jpg"),
+    top: "SELAMAT DATANG DI",
+    bottom: "PT JANU PUTRA SEJAHTERA",
+  },
+  {
+    url: require("./assets/Hero/3.jpg"),
+    top: "PERUSAHAAN",
+    bottom: "PETERNAKAN TERINTEGRASI",
+  },
 ];
 
 export const DataProduk = [
@@ -30,7 +38,6 @@ export const DataProduk = [
     nama: "Karkas Ayam",
     url: require("./assets/Produk/4.png"),
   },
-  
 ];
 
 export const DataNilai = [
@@ -98,41 +105,100 @@ export const DataLokasi = [
     url: require("./assets/Lokasi/1.png"),
     nama: "Peternakan Pembibitan",
     desc: "Grantung, Karangmoncol, Purbalingga, Jawa Tengah",
+    carousel: [
+      require("./assets/Lokasi Usaha/1/1.jpg"),
+      require("./assets/Lokasi Usaha/1/2.jpg"),
+      require("./assets/Lokasi Usaha/1/3.jpg"),
+      require("./assets/Lokasi Usaha/1/4.jpg"),
+    ],
+    footer:
+      "Terdiri dari 20 kandang dengan total kapasitas 200 ribu ekor ayam.",
   },
   {
     url: require("./assets/Lokasi/1.png"),
     nama: "Peternakan Pembibitan",
     desc: "Ngawis, Karangmojo, Gunungkidul, DI Yogyakarta",
+    carousel: [
+      require("./assets/Lokasi Usaha/2/1.jpg"),
+      require("./assets/Lokasi Usaha/2/2.jpg"),
+      require("./assets/Lokasi Usaha/2/3.jpg"),
+      require("./assets/Lokasi Usaha/2/4.jpg"),
+    ],
+    footer: "Terdiri dari 9 kandang dengan total kapasitas 90 ribu ekor ayam.",
   },
   {
     url: require("./assets/Lokasi/2.png"),
     nama: "Peternakan Broiler",
     desc: "Klerong, Jatipuro, Karanganyar, Jawa Tengah",
+    carousel: [
+      require("./assets/Lokasi Usaha/3/1.jpg"),
+      require("./assets/Lokasi Usaha/3/2.jpg"),
+      require("./assets/Lokasi Usaha/3/3.jpg"),
+      require("./assets/Lokasi Usaha/3/4.jpg"),
+    ],
+    footer: "Memiliki total kapasitas 90 ribu ekor ayam tiap bulannya.",
   },
   {
     url: require("./assets/Lokasi/2.png"),
     nama: "Peternakan Broiler",
     desc: "Margokaton, Seyegan, Sleman, DI Yogyakarta",
+    carousel: [
+      require("./assets/Lokasi Usaha/4/1.jpg"),
+      require("./assets/Lokasi Usaha/4/2.jpg"),
+      require("./assets/Lokasi Usaha/4/3.jpg"),
+      require("./assets/Lokasi Usaha/4/4.jpg"),
+    ],
+    footer: "Memiliki total kapasitas 100 ribu ekor ayam tiap bulannya.",
   },
   {
     url: require("./assets/Lokasi/2.png"),
     nama: "Peternakan Broiler",
     desc: "Sistem Sewa dan Kemitraan di Jawa dan Bali",
+    carousel: [
+      require("./assets/Lokasi Usaha/5/1.jpg"),
+      require("./assets/Lokasi Usaha/5/2.jpg"),
+      require("./assets/Lokasi Usaha/5/3.jpg"),
+      require("./assets/Lokasi Usaha/5/4.jpg"),
+    ],
+    footer:
+      "Sistem Sewa dan Kemitraan di Jawa dan Bali Total seluruh kandang berkapasitas 600 ribu ekor ayam tiap bulannya.",
   },
   {
     url: require("./assets/Lokasi/3.png"),
     nama: "Peternakan Petelur",
     desc: "Kulon Progo dan Sleman, DI Yogyakarta",
+    carousel: [
+      require("./assets/Lokasi Usaha/6/1.jpg"),
+      require("./assets/Lokasi Usaha/6/2.jpg"),
+      require("./assets/Lokasi Usaha/6/3.jpg"),
+      require("./assets/Lokasi Usaha/6/4.jpg"),
+    ],
+    footer: "Total seluruh kandang berkapasitas 200 ribu ekor ayam.",
   },
   {
     url: require("./assets/Lokasi/4.png"),
     nama: "Penetasan Telur",
     desc: "Karangmojo, Gunungkidul, DI Yogyakarta",
+    carousel: [
+      require("./assets/Lokasi Usaha/7/1.jpg"),
+      require("./assets/Lokasi Usaha/7/2.jpg"),
+      require("./assets/Lokasi Usaha/7/3.jpg"),
+      require("./assets/Lokasi Usaha/7/4.jpg"),
+    ],
+    footer:
+      "Memiliki 10 mesin penetas telur dengan kapasitas totaln10 ribu telur per mesin atau sebanyak 100 ribu telur setiap hari.",
   },
   {
     url: require("./assets/Lokasi/5.png"),
     nama: "Rumah Potong Ayam",
     desc: "Cebongan, Mlati, Sleman, DI Yogyakarta",
+    carousel: [
+      require("./assets/Lokasi Usaha/8/1.jpg"),
+      require("./assets/Lokasi Usaha/8/2.jpg"),
+      require("./assets/Lokasi Usaha/8/3.jpg"),
+      require("./assets/Lokasi Usaha/8/4.jpg"),
+    ],
+    footer: "Memiliki kapasitas produksi sebanyak 4000 ekor ayam per jamnya.",
   },
 ];
 
@@ -201,6 +267,21 @@ export const DataSectionBusiness = [
     desc: "Peternakan ayam broiler dengan total kapasitas 1 juta ekor per bulan. Peternakan ini berlokasi di Klerong, Karanganyar dan Seyegan, Sleman serta daerah lainnya di Jawa dan Bali dengan sistem sewa dan kemitraan.",
   },
   {
+    id: "petelur",
+    link: "/business/petelur",
+    nama: "Peternakan Petelur",
+    url: [
+      require("./assets/Petelur/1.jpg"),
+      require("./assets/Petelur/2.jpg"),
+      require("./assets/Petelur/3.jpg"),
+      require("./assets/Petelur/4.jpg"),
+      require("./assets/Petelur/5.jpg"),
+      require("./assets/Petelur/6.jpg"),
+      require("./assets/Petelur/7.jpg"),
+    ],
+    desc: "Memiliki peternakan ayam petelur di Lendah, Kulon Progo dan Seyegan, Sleman yang mampu menampung sebanyak 200 ribu ekor ayam. Peternakan ini dilengkapi dengan sistem penyediaan makanan dan air yang terintegrasi, serta sistem kebersihan yang ketat untuk menjamin kualitas telur yang dihasilkan.",
+  },
+  {
     id: "penetasan",
     link: "/business/penetasan",
     nama: "Penetasan Telur",
@@ -235,7 +316,7 @@ export const DataSectionBusiness = [
 export const DataLinkBusiness = [
   {
     path: "pembibitan",
-    icon:require("./assets/IconBisnis/1.png"),
+    icon: require("./assets/IconBisnis/1.png"),
     url: [
       require("./assets/Pembibitan/1.jpg"),
       require("./assets/Pembibitan/2.jpg"),
@@ -252,33 +333,50 @@ export const DataLinkBusiness = [
   },
   {
     path: "broiler",
-    icon:require("./assets/IconBisnis/2.png"),
+    icon: require("./assets/IconBisnis/2.png"),
     url: [
-        require("./assets/Broiler/1.jpg"),
-        require("./assets/Broiler/2.jpg"),
-        require("./assets/Broiler/3.jpg"),
-        require("./assets/Broiler/4.jpg"),
-        require("./assets/Broiler/5.jpg"),
-        require("./assets/Broiler/6.jpg"),
-        require("./assets/Broiler/7.jpg"),
-      ],
+      require("./assets/Broiler/1.jpg"),
+      require("./assets/Broiler/2.jpg"),
+      require("./assets/Broiler/3.jpg"),
+      require("./assets/Broiler/4.jpg"),
+      require("./assets/Broiler/5.jpg"),
+      require("./assets/Broiler/6.jpg"),
+      require("./assets/Broiler/7.jpg"),
+    ],
     nama: "Peternakan Broiler",
     par1: "Peternakan ayam broiler dengan total kapasitas 1 juta ekor per bulan. Peternakan ini berlokasi di Klerong, Karanganyar dan Seyegan, Sleman serta daerah lainnya di Jawa dan Bali dengan sistem sewa dan kemitraan.",
     par2: "Peternakan ini merupakan tempat penampungan ayam broiler yang dikembangkan khusus untuk dijual sebagai daging ayam konsumsi. Peternakan ini memiliki fasilitas yang sesuai untuk memelihara ayam broiler, seperti kandang yang terkontrol dengan baik, suhu yang diatur secara tepat, dan pakan yang ternutrisi dengan baik.",
     par3: "Dengan demikian, peternakan ini dapat memastikan pertumbuhan ayam broiler yang optimal. Ayam broiler ini kemudian diperdagangkan di pasar-pasar tradisional maupun di pasar-pasar modern seperti supermarket di daerah Jawa dan Bali.",
   },
   {
-    path: "penetasan",
-    icon:require("./assets/IconBisnis/4.png"),
+    path: "petelur",
+    icon: require("./assets/IconBisnis/3.png"),
     url: [
-        require("./assets/Penetasan/1.jpg"),
-        require("./assets/Penetasan/2.jpg"),
-        require("./assets/Penetasan/3.jpg"),
-        require("./assets/Penetasan/4.jpg"),
-        require("./assets/Penetasan/5.jpg"),
-        require("./assets/Penetasan/6.jpg"),
-        require("./assets/Penetasan/7.jpg"),
-      ],
+      require("./assets/Petelur/1.jpg"),
+      require("./assets/Petelur/2.jpg"),
+      require("./assets/Petelur/3.jpg"),
+      require("./assets/Petelur/4.jpg"),
+      require("./assets/Petelur/5.jpg"),
+      require("./assets/Petelur/6.jpg"),
+      require("./assets/Petelur/7.jpg"),
+    ],
+    nama: "Peternakan Petelur",
+    par1: "Memiliki peternakan ayam petelur di Lendah, Kulon Progo dan Seyegan, Sleman yang mampu menampung sebanyak 200 ribu ekor ayam. Peternakan ini dilengkapi dengan sistem penyediaan makanan dan air yang terintegrasi, serta sistem kebersihan yang ketat untuk menjamin kualitas telur yang dihasilkan.",
+    par2: "Dilengkapi dengan fasilitas penting yang dibutuhkan untuk menjaga kualitas produksi. Kandang memenuhi syarat standar untuk memastikan kenyamanan dan kesehatan ayam. Faktor-faktor seperti udara bersih, cahaya matahari yang cukup, dan suhu yang stabil dipertimbangkan dalam perencanaan dan pembangunan kandang.",
+    par3: "Pemeliharaan ayam petelur juga merupakan faktor kunci dalam menjamin mutu produksi. Hal-hal seperti makan yang baik dan seimbang, air bersih dan cukup, serta pemeriksaan kesehatan rutin dilakukan untuk menjaga kesehatan dan produktivitas ayam. Selain itu, praktik-praktik higienis dan sanitasi yang baik juga dijaga untuk mencegah penyebaran penyakit.",
+  },
+  {
+    path: "penetasan",
+    icon: require("./assets/IconBisnis/4.png"),
+    url: [
+      require("./assets/Penetasan/1.jpg"),
+      require("./assets/Penetasan/2.jpg"),
+      require("./assets/Penetasan/3.jpg"),
+      require("./assets/Penetasan/4.jpg"),
+      require("./assets/Penetasan/5.jpg"),
+      require("./assets/Penetasan/6.jpg"),
+      require("./assets/Penetasan/7.jpg"),
+    ],
     nama: "Penetasan Telur",
     par1: "Janu Putra Sejahtera memiliki tempat penetasan ayam yang terletak di Karangmojo, Gunungkidul. Fasilitas ini memiliki 10 mesin penetas telur dengan kapasitas 10 ribu telur per mesin, yang memungkinkan perusahaan menetaskan sebanyak 100 ribu telur setiap hari. Selain itu, perusahaan juga memiliki sistem penyediaan makanan dan air yang canggih untuk menjamin kualitas anak ayam yang dihasilkan JPS menghasilkan anak ayam yang sehat dan berkualitas tinggi.    ",
     par2: "Fasilitas ini dilengkapi dengan peralatan dan sistem yang memenuhi standar untuk memastikan hasil yang berkualitas. Inkubator berkualitas tinggi, sistem kontrol suhu dan kelembaban yang stabil, dan teknologi pemantauan yang canggih harus digunakan untuk memastikan tingkat keberhasilan penetasan yang tinggi.",
@@ -286,16 +384,16 @@ export const DataLinkBusiness = [
   },
   {
     path: "rpa",
-    icon:require("./assets/IconBisnis/5.png"),
+    icon: require("./assets/IconBisnis/5.png"),
     url: [
-        require("./assets/RPA/1.jpg"),
-        require("./assets/RPA/2.jpg"),
-        require("./assets/RPA/3.jpg"),
-        require("./assets/RPA/4.jpg"),
-        require("./assets/RPA/5.jpg"),
-        require("./assets/RPA/6.jpg"),
-        require("./assets/RPA/7.jpg"),
-      ],
+      require("./assets/RPA/1.jpg"),
+      require("./assets/RPA/2.jpg"),
+      require("./assets/RPA/3.jpg"),
+      require("./assets/RPA/4.jpg"),
+      require("./assets/RPA/5.jpg"),
+      require("./assets/RPA/6.jpg"),
+      require("./assets/RPA/7.jpg"),
+    ],
     nama: "Rumah Potong Ayam",
     par1: "Janu Putra Sejahtera memiliki fasilitas berupa rumah potong yang terletak di Cebongan, Sleman, DI Yogyakarta. Rumah potong ayam terintegrasi dengan bisnis peternakan untuk mengolah ayam broiler hidup menjadi karkas ayam dan ayam potong. Fasilitas ini memiliki kapasitas pemotongan ayam 4000 ekor per jam dan memiliki cold storage dengan kapasitas 180 ton. ",
     par2: "Fasilitas rumah potong ayam memegang peran penting dalam menghasilkan produk yang berkualitas dan layak untuk dijual. Ruang kerja bersih, higienis, dan dilengkapi dengan peralatan yang sesuai dengan standar. Mesin pemotong yang tajam, area pembersihan yang baik, dan sistem pengolahan air yang efektif harus ada untuk memastikan hasil yang berkualitas.",
@@ -303,17 +401,53 @@ export const DataLinkBusiness = [
   },
 ];
 
+export const DewanDireksi = [
+  {
+    nama: "Singgih Januratmoko",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Komisaris Utama",
+  },
+  {
+    nama: "Sova Marwati",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Komisaris",
+  },
+  {
+    nama: "Sri Mulyani",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Direktur Utama",
+  },
+  {
+    nama: "Fadhl Muhammad Firdaus",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Direktur",
+  },
+];
 
-export const DewanDireksi=[
-  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
-  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
-  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
-  {nama:"Nama Direksi",url:require("./assets/Direksi/2.jpg"),desc:"Jabatan"},
-]
+export const Kontak = [
+  { nama: "Nomor Telephone", icon: "fa fa-phone", desc: "(0274) 871163" },
+  {
+    nama: "Email",
+    icon: " fa fa-envelope",
+    desc: "info@januputrasejahtera.com",
+  },
+  { nama: "Instagram", icon: "fa fa-instagram", desc: "januputrasejahtera" },
+  { nama: "Linkedin", icon: "fa fa-linkedin", desc: "PT Janu Putra Sejahtera" },
+];
 
-export const Kontak=[
-  {nama:"Nomor Telephone",icon:"fa fa-phone",desc:"(0274) 871163"},
-  {nama:"Email",icon:" fa fa-envelope",desc:"info@januputrasejahtera.com"},
-  {nama:"Instagram",icon:"fa fa-instagram",desc:"januputrasejahtera"},
-  {nama:"Linkedin",icon:"fa fa-linkedin",desc:"PT Janu Putra Sejahtera"},
+export const DataRelasi = [
+  { title: "Prospektus", img: require("./assets/Icon Relasi/1.png"), url: require("./assets/File/prospektus.docx")},
+  {
+    title: "Laporan Keuangan",
+    img: require("./assets/Icon Relasi/2.png"),
+    url: require("./assets/File/prospektus.docx"),
+  },
+  { title: "RUPS", img: require("./assets/Icon Relasi/3.png"), url: require("./assets/File/prospektus.docx") },
+];
+
+export const IconAbout=[
+  {url:require("./assets/Tentang/1.png"),title:"9+ FASILITAS"},
+  {url:require("./assets/Tentang/2.png"),title:"6+ LINI BISNIS"},
+  {url:require("./assets/Tentang/3.png"),title:"5+ PRODUK"},
+  {url:require("./assets/Tentang/4.png"),title:"1400+ KARYAWAN"}
 ]

@@ -7,13 +7,16 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import MisiComponent from "../components/MisiComponents";
-import Hero1 from "../assets/Hero Section/1.png";
-import Hero2 from "../assets/Hero Section/2.png";
+import Hero1 from "../assets/Hero Section/1.jpg";
+import Hero2 from "../assets/Hero Section/2.jpg";
+import LiniMasa1 from "../assets/Linimasa-02.jpg";
+import LiniMasa2 from "../assets/Linimasa-03.jpg";
 import { DataMisi } from "../Data";
 import Location from "../components/Location";
 import { DataLokasi } from "../Data";
 import Card from "react-bootstrap/esm/Card";
 import { DewanDireksi } from "../Data";
+import { IconAbout } from "../Data";
 export default function About() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -24,10 +27,67 @@ export default function About() {
       <section className="hero-about mt-5 mt-md-0" id="about">
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <CarouselItem className="hero-item">
-            <img className="d-block w-100" src={Hero1} />
+            <div
+              className="d-block vh-100 mx-auto d-flex align-items-center justify-content-center"
+              style={{
+                backgroundImage: `url(${Hero1})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Container>
+                <Row>
+                  <h1
+                    className="display-1 text-center"
+                    style={{ color: "rgb(249, 177, 49)" }}
+                  >
+                    TENTANG KAMI
+                  </h1>
+                  <h1
+                    className="h1 text-center"
+                    style={{ color: "white", fontWeight: "bold" }}
+                  >
+                    PT JANU PUTRA SEJAHTERA
+                  </h1>
+                </Row>
+              </Container>
+            </div>
           </CarouselItem>
           <CarouselItem className="hero-item">
-            <img className="d-block w-100" src={Hero2} />
+            <div
+              className="d-block vh-100 mx-auto d-flex align-items-center justify-content-center"
+              style={{
+                backgroundImage: `url(${Hero2})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Container>
+                <Row className="d-flex align-items-center justify-content-center">
+                  {IconAbout.map((item) => (
+                    <Col
+                      xs={6}
+                      sm={6}
+                      md={3}
+                      lg={3}
+                      className="justify-content-center"
+                    >
+                      <Row>
+                        <img className="img-responsive w-50" src={item.url} />
+                      </Row>
+                      <Row>
+                        <h3
+                          className="h3 text-center"
+                          style={{ color: "rgb(249, 177, 49)" }}
+                        >
+                          {item.title}
+                        </h3>
+                      </Row>
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </div>
           </CarouselItem>
         </Carousel>
       </section>
@@ -118,7 +178,16 @@ export default function About() {
               Yang kami lakukan untuk membangun perusahaan
             </p>
           </Row>
-          <Row className="text-center d-flex  align-items-start justify-content-center mb-5"></Row>
+          <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+              <CarouselItem className="">
+                <img className="d-block w-100" src={LiniMasa1} />
+              </CarouselItem>
+              <CarouselItem className="">
+                <img className="d-block w-100" src={LiniMasa2} />
+              </CarouselItem>
+            </Carousel>
+          </Row>
         </Container>
       </section>
 
@@ -140,6 +209,8 @@ export default function About() {
                 url={lokasi.url}
                 desc={lokasi.desc}
                 nama={lokasi.nama}
+                carousel={lokasi.carousel}
+                footer={lokasi.footer}
               />
             ))}
           </Row>
@@ -160,18 +231,21 @@ export default function About() {
             >
               <h5 className="h5 py-2">DEWAN DIREKSI</h5>
             </Col>
-        
           </Row>
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
             {DewanDireksi.map((direktur) => (
-              <Col lg={3} md={6} sm={12} xs={12} className="d-flex justify-content-center align-items-center mb-5">
+              <Col
+                lg={3}
+                md={6}
+                sm={12}
+                xs={12}
+                className="d-flex justify-content-center align-items-center mb-5"
+              >
                 <Card style={{ width: "18rem" }}>
                   <Card.Img variant="top" src={direktur.url} />
                   <Card.Body>
                     <Card.Title>{direktur.nama}</Card.Title>
-                    <Card.Text>
-                      {direktur.desc}
-                    </Card.Text>
+                    <Card.Text>{direktur.desc}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

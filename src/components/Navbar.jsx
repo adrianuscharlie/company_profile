@@ -13,12 +13,12 @@ export default function Header() {
     <header>
       <Navbar fixed="top" expand="lg" className="navbar-custom">
         <Container fluid>
-          <NavLink to="/" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand ms-3">
             <img className="d-inline-block align-top" src={Logo} width={50} />
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto text-center">
               <HashLink className="nav-link" to="/#home">
                 Beranda{" "}
               </HashLink>
@@ -41,6 +41,7 @@ export default function Header() {
                 <div className="dropdown-content">
                   <NavLink smooth to="business/pembibitan">Peternakan Pembibitan</NavLink>
                   <NavLink smooth to="business/broiler">Peternakan Broiler</NavLink>
+                  <NavLink smooth to="business/petelur">Peternakan Petelur</NavLink>
                   <NavLink smooth to="business/penetasan">Penetasan Telur</NavLink>
                   <NavLink smooth to="business/rpa">Rumah Potong Ayam</NavLink>
                 </div>
@@ -60,12 +61,12 @@ export default function Header() {
               <NavLink className="nav-link" to="relation">
                 Relasi Investor
               </NavLink>
-              <HashLink className="nav-link ms-1  p-2 me-3" to="contact">
-                Kontak
-              </HashLink>
+              
             </Nav>
             <div className="dropdown-divider"></div>
-            
+            <HashLink className="contact-link nav-link ms-1 text-center mx-lg-0 ms-5 me-5 px-3 py-2 me-lg-3" id="contact-link" to="contact">
+                Kontak
+              </HashLink>
           </Navbar.Collapse>
         </Container>
       </Navbar>

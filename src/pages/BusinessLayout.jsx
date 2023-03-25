@@ -35,7 +35,7 @@ export default function BusinessLayout(props) {
             </Col>
             <Col md={8} xs={5} className="ms-4">
               <h1
-                className="display-1 bold ms-4 ms-md-0"
+                className="display-2 bold ms-3 ms-md-0"
                 style={{ fontWeight: "500", color: "rgb(12, 46, 122)" }}
               >
                 {props.nama}

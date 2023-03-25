@@ -13,15 +13,15 @@ export default function Contact() {
         id="kontak"
         style={{ backgroundColor: "" }}
       >
-        <Container className="py-5">
+        <Container className="py-5 mt-5">
           <Row className="text-center d-flex align-items-center justify-content-center mb-5">
             <Col
-              md={4}
+              md={5}
               sm={12}
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 py-2 mb-5">HUBUNGI KAMI</h5>
+            <h3 className="display-2 text-center text-bold mb-3 mt-5" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>Hubungi Kami</h3>
             </Col>
             <p className="lead">
               Untuk informasi lebih lanjut, kemitraan, pertanyaan seputar produk
@@ -110,7 +110,7 @@ export default function Contact() {
                     style={{ height: "auto" }}
                   >
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253037.94476824644!2d110.43592875362346!3d-7.713389909116743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a446d4faee281%3A0x7cbe092e0c26a5e4!2sJanuputra!5e0!3m2!1sen!2sid!4v1675951324722!5m2!1sen!2sid"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7907.426756210226!2d110.58918577219872!3d-7.713872319301987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a446d4faee281%3A0x7cbe092e0c26a5e4!2sJanuputra!5e0!3m2!1sen!2sid!4v1676272316179!5m2!1sen!2sid"
                       width="600"
                       height="450"
                       style={{ border: "0" }}

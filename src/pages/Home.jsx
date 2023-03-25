@@ -22,10 +22,34 @@ export default function Home() {
   return (
     <>
       <section className="mt-5 mt-md-0" id="home">
-        <Carousel activeIndex={index} onSelect={handleSelect} className="carousel">
+        <Carousel activeIndex={index} onSelect={handleSelect} className="">
           {DataCarousel.map((img) => (
             <CarouselItem>
-              <img className="d-block w-100" src={img} />
+              <div
+                className="d-block vh-100 mx-auto d-flex align-items-center justify-content-center"
+                style={{
+                  backgroundImage: `url(${img.url})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <Container>
+                  <Row>
+                    <h1
+                      className="h1 text-center"
+                      style={{ color: "white" }}
+                    >
+                      {img.top}
+                    </h1>
+                    <h1
+                      className="display-3 text-center"
+                      style={{ color: "rgb(249, 177, 49)",fontWeight:"bold"}}
+                    >
+                      {img.bottom}
+                    </h1>
+                  </Row>
+                </Container>
+              </div>
             </CarouselItem>
           ))}
         </Carousel>
