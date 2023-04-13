@@ -408,9 +408,9 @@ export const DewanDireksi = [
     desc: "Komisaris Utama",
   },
   {
-    nama: "Sova Marwati",
+    nama: "Diah amini Aprianti",
     url: require("./assets/Direksi/2.jpg"),
-    desc: "Komisaris",
+    desc: "Komisaris Independen",
   },
   {
     nama: "Sri Mulyani",

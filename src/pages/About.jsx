@@ -99,7 +99,7 @@ export default function About() {
                 <iframe
                   style={{ aspectRatio: "16/9", width: "100%" }}
                   className="video"
-                  src="https://www.youtube.com/embed/AjWfY7SnMBI"
+                  src="https://www.youtube.com/embed/iptFv3Qkix4"
                   frameBorder={0}
                   allow="accelerometer; autoplay; encrypted-media; gyroscope;"
                   allowFullScreen
