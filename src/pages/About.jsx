@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import CarouselItem from "react-bootstrap/esm/CarouselItem";
-import { DataCarousel } from "../Data";
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -11,13 +10,11 @@ import Hero1 from "../assets/Hero Section/1.jpg";
 import Hero2 from "../assets/Hero Section/2.jpg";
 import LiniMasa1 from "../assets/Linimasa-02.jpg";
 import LiniMasa2 from "../assets/Linimasa-03.jpg";
-import { DataMisi } from "../Data";
 import Location from "../components/Location";
-import { DataLokasi } from "../Data";
 import Card from "react-bootstrap/esm/Card";
-import { DewanDireksi } from "../Data";
-import { IconAbout } from "../Data";
-export default function About() {
+export default function About(props) {
+  const data=props.data
+  const lang=props.lang
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -41,7 +38,7 @@ export default function About() {
                     className="display-1 text-center"
                     style={{ color: "rgb(249, 177, 49)" }}
                   >
-                    TENTANG KAMI
+                  {lang==='id'?'TENTANG KAMI':'ABOUT US'}
                   </h1>
                   <h1
                     className="h1 text-center"
@@ -64,7 +61,7 @@ export default function About() {
             >
               <Container>
                 <Row className="d-flex align-items-center justify-content-center">
-                  {IconAbout.map((item) => (
+                  {data.icon.map((item) => (
                     <Col
                       xs={6}
                       sm={6}
@@ -114,9 +111,9 @@ export default function About() {
               <div className="lc-block lg-ms-5">
                 <div editable="rich">
                   <h1 className="fw-bolder display-2">
-                    Video <br />
-                    Profil <br />
-                    Perseroan
+                  {lang==='id'?'Video':'Company'}  <br />
+                  {lang==='id'?'Profil':'Profile'} <br />
+                  {lang==='id'?'Perusahaan':'Video'}
                   </h1>
                   <h6 className="h6">PT Janu Putra Sejahtera</h6>
                 </div>
@@ -128,10 +125,9 @@ export default function About() {
       <section className="visi-about my-0 mt-md-5 pt-3" id="visi">
         <Container className="pt-5 ps-4 mx-md-5 py-5">
           <Row className="d-flex align-items-center justify-content-center">
-            <h5 className="h5">VISI PERSEROAN</h5>
+            <h5 className="h5">{lang==='id'?'VISI PERSEROAN':'COMPANY VISION'}</h5>
             <h2 className="h2">
-              Menjadi perusahaan ayam integrator terkemuka di Indonesia yang
-              memberikan kontribusi positif bagi peternakan ayam dan masyarakat
+            {lang==='id'?'Menjadi perusahaan ayam integrator terkemuka di Indonesia yang memberikan kontribusi positif bagi peternakan ayam dan masyarakat':'To become a leading chicken integrator company in Indonesia that provides a positive contribution to the poultry industry and society.'}
             </h2>
           </Row>
         </Container>
@@ -146,14 +142,15 @@ export default function About() {
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className=" h5 py-2">MISI KAMI</h5>
+              <h5 className=" h5 py-2">{lang==='id'?'MISI KAMI':'OUR MISSION'}</h5>
             </Col>
             <p className="lead" style={{ fontSize: "25px" }}>
-              Yang kami lakukan untuk membangun perusahaan
+            {lang==='id'?'Yang kami lakukan untuk membangun perusahaan':'What we do to build the company.'}
+              
             </p>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
-            {DataMisi.map((misi) => (
+            {data.misi.map((misi) => (
               <MisiComponent url={misi.url} desc={misi.desc} />
             ))}
           </Row>
@@ -172,10 +169,10 @@ export default function About() {
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 py-2">LINIMASA SEJARAH</h5>
+              <h5 className="h5 py-2">{lang==='id'?'LINIMASA SEJARAH':'TIMELINE OF HISTORY'}</h5>
             </Col>
             <p className="lead" style={{ fontSize: "25px" }}>
-              Yang kami lakukan untuk membangun perusahaan
+            {lang==='id'?'Perjalanan perusahaan kami dari masa ke masa':'The journey of our company throughout the years.'}
             </p>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
@@ -200,17 +197,18 @@ export default function About() {
               sm={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 py-2 ">LOKASI USAHA</h5>
+              <h5 className="h5 py-2 ">{lang==='id'?'LOKASI USAHA':'BUSINESS LOCATION'}</h5>
             </Col>
           </Row>
           <Row className="text-center d-flex  align-items-start justify-content-center mx-3">
-            {DataLokasi.map((lokasi) => (
+            {data.lokasi.map((lokasi) => (
               <Location
                 url={lokasi.url}
                 desc={lokasi.desc}
                 nama={lokasi.nama}
                 carousel={lokasi.carousel}
                 footer={lokasi.footer}
+                lang={lang}
               />
             ))}
           </Row>
@@ -229,11 +227,11 @@ export default function About() {
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 py-2">DEWAN DIREKSI</h5>
+              <h5 className="h5 p-2">{lang==='id'?'DEWAN DIREKSI':'BOARD OF DIRECTORS'}</h5>
             </Col>
           </Row>
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
-            {DewanDireksi.map((direktur) => (
+            {data.direksi.map((direktur) => (
               <Col
                 lg={3}
                 md={6}

@@ -40,7 +40,7 @@ export const DataProduk = [
   },
 ];
 
-export const DataNilai = [
+export  const DataNilai = [
   {
     nama: "KUALITAS",
     desc: "Selalu mengedepankan kualitas dalam semua aspek bisnisnya, mulai dari produk hingga pelayanan kepada konsumen",
@@ -445,9 +445,25 @@ export const DataRelasi = [
   { title: "RUPS", img: require("./assets/Icon Relasi/3.png"), url: require("./assets/File/prospektus.docx") },
 ];
 
-export const IconAbout=[
+ export const IconAbout=[
   {url:require("./assets/Tentang/1.png"),title:"9+ FASILITAS"},
   {url:require("./assets/Tentang/2.png"),title:"6+ LINI BISNIS"},
   {url:require("./assets/Tentang/3.png"),title:"5+ PRODUK"},
   {url:require("./assets/Tentang/4.png"),title:"1400+ KARYAWAN"}
 ]
+
+
+export const DataID={
+  carousel:DataCarousel,
+  produk:DataProduk,
+  nilai:DataNilai,
+  misi:DataMisi,
+  lokasi:DataLokasi,
+  sectionProduct:DataSectionBusiness,
+  sectionBusiness:DataSectionBusiness,
+  linkBusiness:DataLinkBusiness,
+  direksi:DewanDireksi,
+  kontak:Kontak,
+  relasi:DataRelasi,
+  icon:IconAbout
+}

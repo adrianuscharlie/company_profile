@@ -37,7 +37,7 @@ export default function BusinessSection(props) {
               className="button-selengkapnya ms-0 ms-md-5"
               style={{ textDecoration: "none" }}
             >
-              Selengkapnya
+            {props.lang==='id'?'Selengkapnya':'More Information'}
             </Link>
           </Col>
         </Row>

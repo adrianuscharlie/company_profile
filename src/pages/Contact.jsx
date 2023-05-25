@@ -3,9 +3,9 @@ import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import Card from "react-bootstrap/esm/Card";
-import { Kontak } from "../Data";
 
-export default function Contact() {
+export default function Contact(props) {
+  const data=props.data
   return (
     <>
       <section
@@ -28,7 +28,7 @@ export default function Contact() {
             </p>
           </Row>
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
-            {Kontak.map((kontak) => (
+            {data.kontak.map((kontak) => (
               <Col
                 lg={3}
                 md={6}

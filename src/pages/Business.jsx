@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Hero from "../assets/Hero Section/3.jpg";
 import BusinessSection from "../components/BusinessSection";
-import { DataSectionBusiness } from "../Data";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
-export default function Business() {
+export default function Business(props) {
+  const data=props.data
+  const lang=props.lang
   return (
     <>
       <section className="hero-business mt-5 mt-md-0" id="business">
@@ -22,7 +23,7 @@ export default function Business() {
             className="display-1 text-center"
             style={{ color: "rgb(249, 177, 49)" }}
           >
-            LINI BISNIS
+          {lang==='id'?'LINI BISNIS':'BUSINESS LINES'} 
           </h1>
           <h1
             className="h1 text-center"
@@ -34,13 +35,14 @@ export default function Business() {
       </Container>
         </div>
       </section>
-      {DataSectionBusiness.map((business) => (
+      {data.sectionBusiness.map((business) => (
         <BusinessSection
           nama={business.nama}
           url={business.url}
           id={business.id}
           desc={business.desc}
           link={business.link}
+          lang={lang}
         />
       ))}
     </>

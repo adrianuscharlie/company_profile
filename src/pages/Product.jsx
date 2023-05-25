@@ -4,7 +4,8 @@ import { DataSectionProduct } from "../Data";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import ProductSection from "../components/ProductSection";
-export default function Product() {
+export default function Product(props) {
+  const data=props.data
   return (
     <>
       <section className="hero-product mt-5 mt-md-0 mb-5" id="product">
@@ -35,7 +36,7 @@ export default function Product() {
         </div>
       </section>
 
-      {DataSectionProduct.map((product) => (
+      {data.sectionProduct.map((product) => (
         <ProductSection
           nama={product.nama}
           url={product.url}

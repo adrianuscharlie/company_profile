@@ -37,7 +37,7 @@ export default function Location(props) {
                 onClick={togglePopUp}
                 className="button-selengkapnya"
               >
-                Selengkapnya
+                {props.lang==='id'?'Selengkapnya':'More Information'}
               </button>
               <Modal show={isOpen} onHide={handleClose} className="text-center">
                 <Modal.Header closeButton className="custom-modal">

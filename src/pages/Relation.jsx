@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Hero from "../assets/Hero Section/5.jpg";
-import { DataRelasi } from "../Data";
 import Download from "../components/Download";
-export default function Relation() {
+export default function Relation(props) {
+  const data=props.data
   return (
     <>
       <section className="hero-relation mt-5 mt-md-0 mb-5" id="product">
@@ -38,7 +38,7 @@ export default function Relation() {
       <Container className="py-5">
       <h1 className="display-1 text-center  mb-5 text-bold" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>Relasi Investor</h1>
           <Row className="d-flex justify-content-center align-items-center px-5">
-            {DataRelasi.map((data)=>(
+            {data.relasi.map((data)=>(
                 <Download title={data.title} img={data.img} url={data.url}/>
             ))}
           </Row>
