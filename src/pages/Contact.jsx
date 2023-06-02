@@ -6,6 +6,8 @@ import Card from "react-bootstrap/esm/Card";
 
 export default function Contact(props) {
   const data=props.data
+  const lang=props.lang
+  console.log(lang)
   return (
     <>
       <section
@@ -21,10 +23,10 @@ export default function Contact(props) {
               xs={12}
               className="d-flex justify-content-center"
             >
-            <h3 className="display-2 text-center text-bold mb-3 mt-5" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>Hubungi Kami</h3>
+            <h3 className="display-2 text-center text-bold mb-3 mt-5" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>{lang==='id'?'Hubungi Kami':'Contact Us'}</h3>
             </Col>
             <p className="lead">
-              Untuk informasi lebih lanjut, kemitraan, pertanyaan seputar produk
+            {lang==='id'?'Untuk informasi lebih lanjut, kemitraan, pertanyaan seputar produk':'For more information, partnerships, product questions'}
             </p>
           </Row>
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
@@ -61,7 +63,7 @@ export default function Contact(props) {
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 py-2 mb-5">KANTOR KAMI</h5>
+              <h5 className="h5 py-2 mb-5">{lang==='id'?'KANTOR KAMI':'OUR OFFICE'}</h5>
             </Col>
           </Row>
           <Row className="d-flex align-items-center justify-content-center mb-5">
@@ -91,7 +93,7 @@ export default function Contact(props) {
                   </div>
                 </Row>
                 <Row className="text-center maps p-2" >
-                  <h4 className="h4"  style={{color:"black"}}>Kantor Pusat</h4>
+                  <h4 className="h4"  style={{color:"black"}}>{lang==='id'?'Kantor Pusat':'Headquarters'}</h4>
                 </Row>
               </Container>
             </Col>
@@ -121,7 +123,7 @@ export default function Contact(props) {
                   </div>
                 </Row>
                 <Row className="text-center maps p-2" style={{color:"black"}}>
-                  <h4 className="h4">Kantor Operasional</h4>
+                  <h4 className="h4">{lang==='id'?'Kantor Operasional':'Operational Office'}</h4>
                 </Row>
               </Container>
             </Col>

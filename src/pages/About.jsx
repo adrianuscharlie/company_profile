@@ -222,12 +222,12 @@ export default function About(props) {
         style={{ backgroundColor: "" }}
       >
         <Container className="py-5">
-          <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
+          <Row id='struktur_organisasi' className="text-center d-flex  align-items-start justify-content-center mb-5">
             
                 <img className="d-block w-100" src={Struktur1} />              
               
           </Row>
-          <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
+          <Row id='struktur_kepemilikan' className="text-center d-flex  align-items-start justify-content-center mb-5">
             
                 <img className="d-block w-100" src={Struktur2} />              
               
@@ -236,7 +236,7 @@ export default function About(props) {
       </section>
       <section
         className="direksi-about mt-0 mt-md-5"
-        id="direksi"
+        id="struktur"
         style={{ backgroundColor: "" }}
       >
         <Container className="py-5">
@@ -247,11 +247,11 @@ export default function About(props) {
               xs={12}
               className="d-flex justify-content-center"
             >
-              <h5 className="h5 p-2">{lang==='id'?'KOMISARIS':'BOARD OF COMMISSIONER'}</h5>
+              <h5 className="h5 p-2">{lang==='id'?'DEWAN KOMISARIS':'BOARD OF COMMISSIONER'}</h5>
             </Col>
           </Row>
           
-          <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
+          <Row id="komisaris" className="text-center d-flex  align-items-center justify-content-center mb-5">
             {data.komisaris.map((direktur) => (
               <Col
                 lg={3}
@@ -283,7 +283,7 @@ export default function About(props) {
             </Col>
           </Row>
           
-          <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
+          <Row id="direksi" className="text-center d-flex  align-items-center justify-content-center mb-5">
             {data.direksi.map((direktur) => (
               <Col
                 lg={3}

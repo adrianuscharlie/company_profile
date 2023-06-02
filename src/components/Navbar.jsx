@@ -41,6 +41,15 @@ export default function Header(props) {
                   <HashLink smooth to="about#lokasi">
                     {lang === "id" ? "Lokasi Usaha" : "Business Location"}
                   </HashLink>
+                  <HashLink smooth to="about#struktur_organisasi">
+                    {lang === "id" ? "Struktur Organisasi" : "Organizational Structure"}
+                  </HashLink>
+                  <HashLink smooth to="about#struktur_kepemilikan">
+                    {lang === "id" ? "Struktur Kepemilikan" : "Ownership Structure"}
+                  </HashLink>
+                  <HashLink smooth to="about#komisaris">
+                    {lang === "id" ? "Dewan Komisaris" : "Board of Commissioner"}
+                  </HashLink>
                   <HashLink smooth to="about#direksi">
                     {lang === "id" ? "Dewan Direksi" : "Board of Directors"}
                   </HashLink>

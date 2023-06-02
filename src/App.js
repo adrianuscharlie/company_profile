@@ -51,9 +51,7 @@ function App() {
           {data.relation.map((item)=>(
             <Route path={"relation/"+item.path} element={<RelationLayout lang={lang} nama={item.nama} path={item.path} file={item.file} />}/>
           ))}
-          <Route path="contact" element={<Contact data={data} />} lang={lang}/>
-        </Route>
-        <Route path="/letter" element={<Home data={data} lang={lang}/>}>
+          <Route path="contact" element={<Contact data={data} lang={lang} />}/>
         </Route>
       </Routes>
     </BrowserRouter>
