@@ -1,4 +1,4 @@
-export const DataCarousel = [
+ const DataCarousel = [
   { url: require("./assets/Hero/1.jpg"), top: "", bottom: "" },
   {
     url: require("./assets/Hero/2.jpg"),
@@ -12,7 +12,7 @@ export const DataCarousel = [
   },
 ];
 
-export const DataProduk = [
+ const DataProduk = [
   {
     id: "/product#docps",
     nama: "DOC Parent Stock",
@@ -40,7 +40,7 @@ export const DataProduk = [
   },
 ];
 
-export  const DataNilai = [
+  const DataNilai = [
   {
     nama: "KUALITAS",
     desc: "Selalu mengedepankan kualitas dalam semua aspek bisnisnya, mulai dari produk hingga pelayanan kepada konsumen",
@@ -73,7 +73,7 @@ export  const DataNilai = [
   },
 ];
 
-export const DataMisi = [
+ const DataMisi = [
   {
     url: require("./assets/Misi/1.png"),
     desc: "Memberikan produk berkualitas tinggi kepada konsumen",
@@ -100,7 +100,7 @@ export const DataMisi = [
   },
 ];
 
-export const DataLokasi = [
+ const DataLokasi = [
   {
     url: require("./assets/Lokasi/1.png"),
     nama: "Peternakan Pembibitan",
@@ -202,7 +202,7 @@ export const DataLokasi = [
   },
 ];
 
-export const DataSectionProduct = [
+ const DataSectionProduct = [
   {
     id: "docps",
     nama: "DAY OLD CHICK (DOC) - PARENT STOCK",
@@ -235,7 +235,7 @@ export const DataSectionProduct = [
   },
 ];
 
-export const DataSectionBusiness = [
+ const DataSectionBusiness = [
   {
     id: "pembibitan",
     link: "/business/pembibitan",
@@ -313,7 +313,7 @@ export const DataSectionBusiness = [
   },
 ];
 
-export const DataLinkBusiness = [
+ const DataLinkBusiness = [
   {
     path: "pembibitan",
     icon: require("./assets/IconBisnis/1.png"),
@@ -401,17 +401,7 @@ export const DataLinkBusiness = [
   },
 ];
 
-export const DewanDireksi = [
-  {
-    nama: "Singgih Januratmoko",
-    url: require("./assets/Direksi/2.jpg"),
-    desc: "Komisaris Utama",
-  },
-  {
-    nama: "Diah amini Aprianti",
-    url: require("./assets/Direksi/2.jpg"),
-    desc: "Komisaris Independen",
-  },
+ const DewanDireksi = [
   {
     nama: "Sri Mulyani",
     url: require("./assets/Direksi/2.jpg"),
@@ -423,8 +413,20 @@ export const DewanDireksi = [
     desc: "Direktur",
   },
 ];
+ const Komisaris=[
+  {
+    nama: "Singgih Januratmoko",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Komisaris Utama",
+  },
+  {
+    nama: "Diah amini Aprianti",
+    url: require("./assets/Direksi/2.jpg"),
+    desc: "Komisaris Independen",
+  },
+]
 
-export const Kontak = [
+ const Kontak = [
   { nama: "Nomor Telephone", icon: "fa fa-phone", desc: "(0274) 871163" },
   {
     nama: "Email",
@@ -435,7 +437,7 @@ export const Kontak = [
   { nama: "Linkedin", icon: "fa fa-linkedin", desc: "PT Janu Putra Sejahtera" },
 ];
 
-export const DataRelasi = [
+ const DataRelasi = [
   { title: "Prospektus", img: require("./assets/Icon Relasi/1.png"), url: require("./assets/File/prospektus.docx")},
   {
     title: "Laporan Keuangan",
@@ -445,13 +447,40 @@ export const DataRelasi = [
   { title: "RUPS", img: require("./assets/Icon Relasi/3.png"), url: require("./assets/File/prospektus.docx") },
 ];
 
- export const IconAbout=[
+  const IconAbout=[
   {url:require("./assets/Tentang/1.png"),title:"9+ FASILITAS"},
   {url:require("./assets/Tentang/2.png"),title:"6+ LINI BISNIS"},
   {url:require("./assets/Tentang/3.png"),title:"5+ PRODUK"},
   {url:require("./assets/Tentang/4.png"),title:"1400+ KARYAWAN"}
 ]
 
+
+const RelationPage=[
+  {
+    path:'prospektus',
+    nama:'Prospektus',
+    file:[
+      {nama:'Prospektus 2023',url:require("./assets/File/prospektus.docx"),},
+      {nama:'Prospektus 2022',url:require("./assets/File/prospektus.docx"),}
+    ]
+  },
+  {
+    path:'financial',
+    nama:'Financial Reports',
+    file:[
+      {nama:'Financial Reports 2023',url:require("./assets/File/prospektus.docx"),},
+      {nama:'Financial Reports 2022',url:require("./assets/File/prospektus.docx"),}
+    ]
+  },
+  {
+    path:'rups',
+    nama:'RUPS',
+    file:[
+      {nama:'RUPS 2023',url:require("./assets/File/prospektus.docx"),},
+      {nama:'RUPS 2022',url:require("./assets/File/prospektus.docx"),}
+    ]
+  },
+]
 
 export const DataID={
   carousel:DataCarousel,
@@ -463,7 +492,9 @@ export const DataID={
   sectionBusiness:DataSectionBusiness,
   linkBusiness:DataLinkBusiness,
   direksi:DewanDireksi,
+  komisaris:Komisaris,
   kontak:Kontak,
   relasi:DataRelasi,
-  icon:IconAbout
+  icon:IconAbout,
+  relation:RelationPage
 }

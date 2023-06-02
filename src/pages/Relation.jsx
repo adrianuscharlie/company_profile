@@ -5,6 +5,7 @@ import Hero from "../assets/Hero Section/5.jpg";
 import Download from "../components/Download";
 export default function Relation(props) {
   const data=props.data
+  const lang=props.lang
   return (
     <>
       <section className="hero-relation mt-5 mt-md-0 mb-5" id="product">
@@ -22,7 +23,7 @@ export default function Relation(props) {
                 className="display-1 text-center"
                 style={{ color: "rgb(249, 177, 49)" }}
               >
-                RELASI INVESTOR
+                {lang === "id" ? "RELASI INVESTOR" : "INVESTOR RELATION"}
               </h1>
               <h1
                 className="h1 text-center"
@@ -36,7 +37,7 @@ export default function Relation(props) {
       </section>
       <section className="download-relation mt-0 mt-md-5">
       <Container className="py-5">
-      <h1 className="display-1 text-center  mb-5 text-bold" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>Relasi Investor</h1>
+      <h1 className="display-1 text-center  mb-5 text-bold" style={{color:"rgb(12, 46, 122)",fontWeight:"bold"}}>{lang === "id" ? "RELASI INVESTOR" : "INVESTOR RELATION"}</h1>
           <Row className="d-flex justify-content-center align-items-center px-5">
             {data.relasi.map((data)=>(
                 <Download title={data.title} img={data.img} url={data.url}/>

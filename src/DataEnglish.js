@@ -176,10 +176,8 @@
     },
     {
       url: require("./assets/Lokasi/4.png"),
-      nama: "Egg Hatchery",
-      desc
-
-: "Karangmojo, Gunungkidul, Yogyakarta Special Region",
+      nama: "Hatchery",
+      desc: "Karangmojo, Gunungkidul, Yogyakarta Special Region",
       carousel: [
         require("./assets/Lokasi Usaha/7/1.jpg"),
         require("./assets/Lokasi Usaha/7/2.jpg"),
@@ -285,7 +283,7 @@
     {
       id: "penetasan",
       link: "/business/penetasan",
-      nama: "Egg Incubation",
+      nama: "Hatchery",
       url: [
         require("./assets/Penetasan/1.jpg"),
         require("./assets/Penetasan/2.jpg"),
@@ -378,10 +376,10 @@
         require("./assets/Penetasan/6.jpg"),
         require("./assets/Penetasan/7.jpg"),
       ],
-      name: "Egg Incubation",
-      par1: "Janu Putra Sejahtera operates an egg incubation facility located in Karangmojo, Gunungkidul. The facility has 10 egg incubators with a capacity of 10,000 eggs per machine, allowing the company to hatch up to 100,000 eggs per day. Additionally, the company has advanced systems for providing food and water to ensure the production of healthy and high-quality chicks.",
+      nama: "Hatchery",
+      par1: "Janu Putra Sejahtera operates an hacthery facility located in Karangmojo, Gunungkidul. The facility has 10 egg incubators with a capacity of 10,000 eggs per machine, allowing the company to hatch up to 100,000 eggs per day. Additionally, the company has advanced systems for providing food and water to ensure the production of healthy and high-quality chicks.",
       par2: "The facility is equipped with equipment and systems that meet standards to ensure quality outcomes. High-quality incubators, stable temperature and humidity control systems, and advanced monitoring technology are used to achieve high hatching success rates.",
-      par3: "In the egg incubation process, factors such as temperature, humidity, and timing are carefully considered to ensure optimal results. After hatching, the eggs are handled carefully and passed through the subsequent processes correctly. Quality assurance and regular testing are conducted to ensure that the hatching results meet the established quality standards."
+      par3: "In the hatching process, factors such as temperature, humidity, and timing are carefully considered to ensure optimal results. After hatching, the eggs are handled carefully and passed through the subsequent processes correctly. Quality assurance and regular testing are conducted to ensure that the hatching results meet the established quality standards."
     },
     {
       path: "rpa",
@@ -403,16 +401,7 @@
   ];
   
    const DewanDireksi = [
-    {
-      nama: "Singgih Januratmoko",
-      url: require("./assets/Direksi/2.jpg"),
-      desc: "Chairman of the Board of Commissioners",
-    },
-    {
-      nama: "Diah amini Aprianti",
-      url: require("./assets/Direksi/2.jpg"),
-      desc: "Independent Commissioner",
-    },
+
     {
       nama: "Sri Mulyani",
       url: require("./assets/Direksi/2.jpg"),
@@ -435,6 +424,19 @@
     { nama: "Instagram", icon: "fa fa-instagram", desc: "januputrasejahtera" },
     { nama: "Linkedin", icon: "fa fa-linkedin", desc: "PT Janu Putra Sejahtera" },
   ];
+
+  const Komisaris=[
+    {
+      nama: "Singgih Januratmoko",
+      url: require("./assets/Direksi/2.jpg"),
+      desc: "Chairman of the Board of Commissioners",
+    },
+    {
+      nama: "Diah amini Aprianti",
+      url: require("./assets/Direksi/2.jpg"),
+      desc: "Independent Commissioner",
+    },
+  ]
   
    const DataRelasi = [
     { title: "Prospectus", img: require("./assets/Icon Relasi/1.png"), url: require("./assets/File/prospektus.docx")},
@@ -453,6 +455,32 @@
     {url:require("./assets/Tentang/4.png"),title:"1400+ EMPLOYEE"}
   ]
 
+  const RelationPage=[
+    {
+      path:'prospektus',
+      nama:'Prospectus',
+      file:[
+        {nama:'Prospectus 2023',url:require("./assets/File/prospektus.docx"),},
+        {nama:'Prospectus 2022',url:require("./assets/File/prospektus.docx"),}
+      ]
+    },
+    {
+      path:'financial',
+      nama:'Financial Reports',
+      file:[
+        {nama:'Financial Reports 2023',url:require("./assets/File/prospektus.docx"),},
+        {nama:'Financial Reports 2022',url:require("./assets/File/prospektus.docx"),}
+      ]
+    },
+    {
+      path:'rups',
+      nama:'RUPS',
+      file:[
+        {nama:'RUPS 2023',url:require("./assets/File/prospektus.docx"),},
+        {nama:'RUPS 2022',url:require("./assets/File/prospektus.docx"),}
+      ]
+    },
+  ]
   export const DataEnglish={
     carousel:DataCarousel,
     produk:DataProduk,
@@ -463,7 +491,9 @@
     sectionBusiness:DataSectionBusiness,
     linkBusiness:DataLinkBusiness,
     direksi:DewanDireksi,
+    komisaris:Komisaris,
     kontak:Kontak,
     relasi:DataRelasi,
-    icon:IconAbout
+    icon:IconAbout,
+    relation:RelationPage
   }

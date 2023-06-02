@@ -6,6 +6,7 @@ import Row from "react-bootstrap/esm/Row";
 import ProductSection from "../components/ProductSection";
 export default function Product(props) {
   const data=props.data
+  const lang=props.lang
   return (
     <>
       <section className="hero-product mt-5 mt-md-0 mb-5" id="product">
@@ -22,7 +23,8 @@ export default function Product(props) {
             className="display-1 text-center"
             style={{ color: "rgb(249, 177, 49)" }}
           >
-            PRODUK KAMI
+          {lang==='id'?'PRODUK KAMI':'OUR PRODUCTS'}
+            {}
           </h1>
           <h1
             className="h1 text-center"

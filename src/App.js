@@ -12,6 +12,7 @@ import BusinessLayout from "./pages/BusinessLayout";
 import Contact from "./pages/Contact";
 import { DataID } from "./Data";
 import { DataEnglish } from "./DataEnglish";
+import RelationLayout from "./pages/RelationLayout";
 
 import { useState ,useEffect} from "react";
 function App() {
@@ -47,6 +48,9 @@ function App() {
           ))}
           <Route path="product" element={<Product data={data} lang={lang} />} />
           <Route path="relation" element={<Relation data={data} lang={lang} />} />
+          {data.relation.map((item)=>(
+            <Route path={"relation/"+item.path} element={<RelationLayout lang={lang} nama={item.nama} path={item.path} file={item.file} />}/>
+          ))}
           <Route path="contact" element={<Contact data={data} />} lang={lang}/>
         </Route>
         <Route path="/letter" element={<Home data={data} lang={lang}/>}>

@@ -62,7 +62,7 @@ export default function Header(props) {
                     {lang === "id" ? "Peternakan Petelur" : "Layer Farm"}
                   </NavLink>
                   <NavLink smooth to="business/penetasan">
-                    {lang === "id" ? "Penetasan Telur" : "Egg Incubation"}
+                    {lang === "id" ? "Penetasan Telur" : "Hatchery"}
                   </NavLink>
                   <NavLink smooth to="business/rpa">
                     {lang === "id"
@@ -94,25 +94,43 @@ export default function Header(props) {
                   </HashLink>
                 </div>
               </div>
-              <NavLink className="nav-link" to="relation">
-                {lang === "id" ? "Relasi Investor" : "Investor Relations"}
-              </NavLink>
+              <div className="dropdown">
+                <NavLink className="nav-link" to="relation">
+                  {lang === "id" ? "Relasi Investor" : "Investor Relations"}{" "}
+                  <i className="fa fa-caret-down"></i>
+                </NavLink>
+                <div className="dropdown-content">
+                  <NavLink smooth to="relation/prospektus">
+                    {lang === "id" ? "Prospektus" : "Prospectus"}
+                  </NavLink>
+                  <NavLink smooth to="relation/financial">
+                    {lang === "id" ? "Laporan Keuangan" : "Financial Reports"}
+                  </NavLink>
+                  <NavLink smooth to="relation/rups">
+                    {lang === "id" ? "RUPS" : "RUPS"}
+                  </NavLink>
+                </div>
+              </div>
             </Nav>
             <div className="dropdown-divider"></div>
             <HashLink
               className="contact-link nav-link ms-1 text-center ms-1 text-center mx-lg-0 ms-5 me-5 px-3 mt-2 py-2 me-lg-3"
               id="contact-link"
               to="contact"
-            >{lang === "id" ? "Kontak": "Contact"}
-              
+            >
+              {lang === "id" ? "Kontak" : "Contact"}
             </HashLink>
             <div className="d-flex justify-content-center">
               <Button
-              id="language"
+                id="language"
                 className="ms-1 text-center mx-lg-0 ms-5 me-5 px-3 mt-2 py-2 me-lg-3 bg-transparent"
                 onClick={props.handleLang}
               >
-                {lang === "id" ? <span>&#x1F1EE;&#x1F1E9;</span> : <span>&#x1F1EC;&#x1F1E7;</span>}
+                {lang === "id" ? (
+                  <span>Bahasa Indonesia</span>
+                ) : (
+                  <span>English</span>
+                )}
               </Button>
             </div>
             <div></div>

@@ -12,6 +12,8 @@ import LiniMasa1 from "../assets/Linimasa-02.jpg";
 import LiniMasa2 from "../assets/Linimasa-03.jpg";
 import Location from "../components/Location";
 import Card from "react-bootstrap/esm/Card";
+import Struktur1 from "../assets/struktur02.jpg"
+import Struktur2 from "../assets/struktur01.jpg"
 export default function About(props) {
   const data=props.data
   const lang=props.lang
@@ -215,6 +217,24 @@ export default function About(props) {
         </Container>
       </section>
       <section
+        className="kepemilikan-about mt-0 mt-md-5"
+        id="kepemilikan"
+        style={{ backgroundColor: "" }}
+      >
+        <Container className="py-5">
+          <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
+            
+                <img className="d-block w-100" src={Struktur1} />              
+              
+          </Row>
+          <Row className="text-center d-flex  align-items-start justify-content-center mb-5">
+            
+                <img className="d-block w-100" src={Struktur2} />              
+              
+          </Row>
+        </Container>
+      </section>
+      <section
         className="direksi-about mt-0 mt-md-5"
         id="direksi"
         style={{ backgroundColor: "" }}
@@ -227,9 +247,42 @@ export default function About(props) {
               xs={12}
               className="d-flex justify-content-center"
             >
+              <h5 className="h5 p-2">{lang==='id'?'KOMISARIS':'BOARD OF COMMISSIONER'}</h5>
+            </Col>
+          </Row>
+          
+          <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
+            {data.komisaris.map((direktur) => (
+              <Col
+                lg={3}
+                md={6}
+                sm={12}
+                xs={12}
+                className="d-flex justify-content-center align-items-center mb-5"
+              >
+                <Card style={{ width: "18rem" }}>
+                  <Card.Img variant="top" src={direktur.url} />
+                  <Card.Body>
+                    <Card.Title>{direktur.nama}</Card.Title>
+                    <Card.Text>{direktur.desc}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+        <Container className="py-5">
+          <Row className="text-center d-flex align-items-center justify-content-center mb-3">
+            <Col
+              md={4}
+              sm={12}
+              xs={12}
+              className="d-flex justify-content-center"
+            >
               <h5 className="h5 p-2">{lang==='id'?'DEWAN DIREKSI':'BOARD OF DIRECTORS'}</h5>
             </Col>
           </Row>
+          
           <Row className="text-center d-flex  align-items-center justify-content-center mb-5">
             {data.direksi.map((direktur) => (
               <Col
