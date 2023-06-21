@@ -62,7 +62,7 @@ export default function Footer(props) {
             </ul>
           </Col>
           <Col lg={2} md={3} sm={6} className="mb-3 col-6">
-            <h4 className="h4">Produk</h4>
+            <h4 className="h4">{lang==='id'?'Produk':'Product'}</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <HashLink smooth to="/product#docps">DOC Parent Stock</HashLink>

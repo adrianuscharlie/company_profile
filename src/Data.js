@@ -461,7 +461,6 @@ const RelationPage=[
     nama:'Prospektus',
     file:[
       {nama:'Prospektus 2023',url:require("./assets/File/prospektus.docx"),},
-      {nama:'Prospektus 2022',url:require("./assets/File/prospektus.docx"),}
     ]
   },
   {
@@ -469,7 +468,6 @@ const RelationPage=[
     nama:'Financial Reports',
     file:[
       {nama:'Financial Reports 2023',url:require("./assets/File/prospektus.docx"),},
-      {nama:'Financial Reports 2022',url:require("./assets/File/prospektus.docx"),}
     ]
   },
   {
@@ -477,7 +475,6 @@ const RelationPage=[
     nama:'RUPS',
     file:[
       {nama:'RUPS 2023',url:require("./assets/File/prospektus.docx"),},
-      {nama:'RUPS 2022',url:require("./assets/File/prospektus.docx"),}
     ]
   },
 ]
@@ -488,7 +485,7 @@ export const DataID={
   nilai:DataNilai,
   misi:DataMisi,
   lokasi:DataLokasi,
-  sectionProduct:DataSectionBusiness,
+  sectionProduct:DataSectionProduct,
   sectionBusiness:DataSectionBusiness,
   linkBusiness:DataLinkBusiness,
   direksi:DewanDireksi,
