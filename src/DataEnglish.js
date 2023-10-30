@@ -404,13 +404,25 @@
 
     {
       nama: "Sri Mulyani",
-      url: require("./assets/Direksi/2.jpg"),
+      url: require("./assets/Direksi/3.jpg"),
       desc: "Chief Executive Officer (CEO)",
+      experience:[
+        "Indonesian citizen, 47 years old. Served as President Director of the Company since 2021 with last appointment in 2023 for a term of 5 (five) years.",
+        "She has had a career with the Company for more than 12 years. Previously he served as General Manager of Production at CV Selabintana Sukabumi (2000-2011), before serving as General Manager of Breeding at the Company (2011-2021),",
+        "She obtained a veterinary degree from Ggajah Mada University, Indonesia, in 1999.",
+        "There is no affiliation with (i) other members of the Company's Board of Directors; (ii) members of the Company's Board of Commissioners; and (iii) shareholders of the Company."
+      ]
     },
     {
       nama: "Fadhl Muhammad Firdaus",
-      url: require("./assets/Direksi/2.jpg"),
+      url: require("./assets/Direksi/4.jpg"),
       desc: "Director",
+      experience:[
+        "Indonesian citizen, 22 years old. Served as Director of the Company since 2021 with last appointment in 2023 for a term of 5 (five) years.",
+        "He has had a career with the Company for more than 2 years.",
+        "Obtained a Bachelor of International Business from Monash University, Australia, in 2022.",
+        "There is an affiliate relationship with (i) the Company's Board of Commissioners; and (ii) the Company's shareholders."
+      ]
     },
   ];
   
@@ -428,13 +440,25 @@
   const Komisaris=[
     {
       nama: "Singgih Januratmoko",
-      url: require("./assets/Direksi/2.jpg"),
+      url: require("./assets/Direksi/1.jpg"),
       desc: "Chairman of the Board of Commissioners",
+      experience:[
+        "Indonesian citizen, 47 years old. Served as President Commissioner of the Company since 2021 with the last appointment in 2023 for a term of 5 (five) years.",
+        "He is a Member of the Republic of Indonesia DPR Commission VI (since 2019),",
+        "Obtained a Bachelor's degree in Veterinary Medicine from Gajah Mada University, Indonesia, in 1999.",
+        "There is an affiliate relationship with (i) members of the Company's Board of Directors; and (ii) shareholders of the Company. There is no affiliation relationship with members of the Board of Commissioners."
+      ]
     },
     {
-      nama: "Diah amini Aprianti",
+      nama: "Arsad Idrus",
       url: require("./assets/Direksi/2.jpg"),
       desc: "Independent Commissioner",
+      experience:[
+        "Indonesian citizen, 41 years old. Serving as Independent Commissioner of the Company since 2023 for a term of 5 (five) years.",
+        "He was an Expert Member of the DPR RI (2009-2019). Until now he also served as Chairman of the Teluk Mandar Foundation (since 2016), and Owner of Kingdom Farm Poultry (since 2020). ",
+        "He obtained a Master's degree in Communication and Political Science from the Jakarta Interstudi Communication College and a Bachelor's degree in Social and Political Science from Veteran University of the Republic of Indonesia Makassar.",
+        "There is no affiliation with (i) other members of the Company's Board of Directors; (ii) members of the Company's Board of Commissioners; and (iii) shareholders of the Company."
+      ]
     },
   ]
   
@@ -450,9 +474,9 @@
   
    const IconAbout=[
     {url:require("./assets/Tentang/1.png"),title:"9+ FACILITY"},
-    {url:require("./assets/Tentang/2.png"),title:"6+ BUSINESS LINES"},
+    {url:require("./assets/Tentang/2.png"),title:"5+ BUSINESS LINES"},
     {url:require("./assets/Tentang/3.png"),title:"5+ PRODUCT"},
-    {url:require("./assets/Tentang/4.png"),title:"1400+ EMPLOYEE"}
+    {url:require("./assets/Tentang/4.png"),title:"300+ EMPLOYEE"}
   ]
 
   const RelationPage=[

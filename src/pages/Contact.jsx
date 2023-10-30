@@ -94,6 +94,7 @@ export default function Contact(props) {
                 </Row>
                 <Row className="text-center maps p-2" >
                   <h4 className="h4"  style={{color:"black"}}>{lang==='id'?'Kantor Pusat':'Headquarters'}</h4>
+                  <p className="text-center text-white">Ruko Casa Grande No.35, Jl. Ringroad Utara, Maguwoharjo, Depok, Sleman, D.I Yogyakarta</p>
                 </Row>
               </Container>
             </Col>
@@ -124,6 +125,7 @@ export default function Contact(props) {
                 </Row>
                 <Row className="text-center maps p-2" style={{color:"black"}}>
                   <h4 className="h4">{lang==='id'?'Kantor Operasional':'Operational Office'}</h4>
+                  <p className="text-center text-white"> Grha Janu Putra, Jalan Pemuda, Mlinjon, Tonggalan, Klaten Tengah, Klaten</p>
                 </Row>
               </Container>
             </Col>

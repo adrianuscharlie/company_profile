@@ -239,10 +239,10 @@ export default function About(props) {
         id="struktur"
         style={{ backgroundColor: "" }}
       >
-        <Container className="py-5">
+        <Container className="py-5 align-items-start">
           <Row className="text-center d-flex align-items-center justify-content-center mb-3">
             <Col
-              md={4}
+              md={6}
               sm={12}
               xs={12}
               className="d-flex justify-content-center"
@@ -251,20 +251,22 @@ export default function About(props) {
             </Col>
           </Row>
           
-          <Row id="komisaris" className="text-center d-flex  align-items-center justify-content-center mb-5">
+          <Row id="komisaris" className="text-start d-flex equal-height-row  align-items-stretch justify-content-center mb-5">
             {data.komisaris.map((direktur) => (
               <Col
-                lg={3}
-                md={6}
-                sm={12}
-                xs={12}
-                className="d-flex justify-content-center align-items-center mb-5"
+              xs={12}
+              sm={12}
+              md={5}
+                className="d-flex justify-content-center align-items-center mb-5 m-5"
               >
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={direktur.url} />
+                <Card className="h-100">
+                  <Card.Img variant="top"  height={400} src={direktur.url} />
                   <Card.Body>
                     <Card.Title>{direktur.nama}</Card.Title>
                     <Card.Text>{direktur.desc}</Card.Text>
+                    {direktur.experience.map((experience)=>(
+                      <Card.Text>{experience}</Card.Text>
+                    ))}
                   </Card.Body>
                 </Card>
               </Col>
@@ -277,26 +279,28 @@ export default function About(props) {
               md={4}
               sm={12}
               xs={12}
-              className="d-flex justify-content-center"
+              className="d-flex justify-content-center "
             >
               <h5 className="h5 p-2">{lang==='id'?'DEWAN DIREKSI':'BOARD OF DIRECTORS'}</h5>
             </Col>
           </Row>
           
-          <Row id="direksi" className="text-center d-flex  align-items-center justify-content-center mb-5">
+          <Row id="direksi" className="text-start d-flex equal-height-row  align-items-stretch justify-content-center mb-5">
             {data.direksi.map((direktur) => (
               <Col
-                lg={3}
-                md={6}
-                sm={12}
-                xs={12}
-                className="d-flex justify-content-center align-items-center mb-5"
+              xs={12}
+              sm={12}
+              md={5}
+                className="d-flex justify-content-center align-items-center mb-5 m-5"
               >
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src={direktur.url} />
+                <Card className="h-100">
+                  <Card.Img variant="top"  height={400} src={direktur.url} />
                   <Card.Body>
                     <Card.Title>{direktur.nama}</Card.Title>
                     <Card.Text>{direktur.desc}</Card.Text>
+                    {direktur.experience.map((experience)=>(
+                      <Card.Text>{experience}</Card.Text>
+                    ))}
                   </Card.Body>
                 </Card>
               </Col>

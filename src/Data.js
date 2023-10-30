@@ -404,25 +404,49 @@
  const DewanDireksi = [
   {
     nama: "Sri Mulyani",
-    url: require("./assets/Direksi/2.jpg"),
+    url: require("./assets/Direksi/3.jpg"),
     desc: "Direktur Utama",
+    experience:[
+      "Warga Negara Indonesia, berusia 47 tahun. Menjabat sebagai Direktur Utama Perseroan sejak tahun 2021 dengan pengangkatan terakhir pada tahun 2023 untuk masa jabatan 5 (lima) tahun.",
+      "Beliau telah berkarir pada Perseroan selama lebih dari 12 tahun. Sebelumnya beliau pernah menjabat sebagai General Manager Produksi di CV selabintana Sukabumi (2000-2011), sebelum menjabat sebagi General Manager Breeding di Perseroan (2011-2021).",
+      "Beliau memperoleh gelar dokter hewan dari Universitas Ggajah Mada, Indonesia, pada tahun 1999. ",
+      "Tidak ada hubungan Afiliasi dengan (i) anggota Direksi Perseroan lainnya; (ii) anggota Dewan Komisaris Perseroan; dan (iii) pemegang saham Perseroan. "
+    ]
   },
   {
     nama: "Fadhl Muhammad Firdaus",
-    url: require("./assets/Direksi/2.jpg"),
+    url: require("./assets/Direksi/4.jpg"),
     desc: "Direktur",
+    experience:[
+      "Warga Negara Indonesia, berusia 22 tahun. Menjabat sebagai Direktur Perseroan sejak tahun 2021 dengan pengangkatan terakhir pada tahun 2023 untuk masa jabatan 5 (lima) tahun.",
+      "Beliau telah berkarir pada  Perseroan  selama lebih dari 2 tahun. ",
+      "Memperoleh gelar Bachelor of International Business dari Monash University, Australia, pada tahun 2022. ",
+      "Terdapat hubungan Afiliasi dengan (i) Dewan Komisaris Perseroan; dan (ii) pemegang saham Perseroan. "
+    ]
   },
 ];
  const Komisaris=[
   {
     nama: "Singgih Januratmoko",
-    url: require("./assets/Direksi/2.jpg"),
+    url: require("./assets/Direksi/1.jpg"),
     desc: "Komisaris Utama",
+    experience:[
+      "Warga Negara Indonesia, berusia 47 tahun. Menjabat sebagai Komisaris Utama Perseroan sejak tahun 2021 dengan pengangkatan terakhir pada tahun 2023 untuk masa jabatan 5 (lima) tahun.",
+      "Beliau  merupakan Anggota DPR Republik Indonesia Komisi VI (sejak 2019).",
+      "Memperoleh gelar Sarjana Kedokteran Hewan dari Universitas Gajah mada, Indonesia, pada tahun 1999.",
+      "Terdapat hubungan Afiliasi dengan (i) anggota Direksi Perseroan; dan (ii) pemegang saham Perseroan. Tidak terdapat hubungan afiliasi dengan anggota Dewan Komisaris. "
+    ]
   },
   {
-    nama: "Diah amini Aprianti",
+    nama: "Arsad Idrus",
     url: require("./assets/Direksi/2.jpg"),
     desc: "Komisaris Independen",
+    experience:[
+      "Warga Negara Indonesia, berusia 41 tahun. Menjabat sebagai Komisaris Independen Perseroan sejak tahun 2023 untuk masa jabatan 5 (lima) tahun.",
+      "Beliau merupakan Tenaga Ahli DPR RI (2009-2019). Hingga saat ini beliau juga menjabat sebagai Chairman di Teluk Mandar Foundation (sejak 2016), dan Pemilik Kingdom Farm Poultry (sejak 2020).  ",
+      "Beliau memperoleh gelar Magister Ilmu Komunikasi dan Politik dari Sekolah Tinggi Ilmu Komunikasi Interstudi Jakarta dan  Sarjana Ilmu Sosial Politik dari Universitas Veteran Republik Indonesia Makassar. ",
+      "Tidak ada hubungan Afiliasi dengan (i) anggota Direksi Perseroan lainnya; (ii) anggota Dewan Komisaris Perseroan; dan (iii) pemegang saham Perseroan. "
+    ]
   },
 ]
 
@@ -449,9 +473,9 @@
 
   const IconAbout=[
   {url:require("./assets/Tentang/1.png"),title:"9+ FASILITAS"},
-  {url:require("./assets/Tentang/2.png"),title:"6+ LINI BISNIS"},
+  {url:require("./assets/Tentang/2.png"),title:"5+ LINI BISNIS"},
   {url:require("./assets/Tentang/3.png"),title:"5+ PRODUK"},
-  {url:require("./assets/Tentang/4.png"),title:"1400+ KARYAWAN"}
+  {url:require("./assets/Tentang/4.png"),title:"300+ KARYAWAN"}
 ]
 
 
